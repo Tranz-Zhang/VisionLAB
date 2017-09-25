@@ -30,6 +30,7 @@
     [self addEntranceWithTitle:@"Gaussian Filter" className:nil];
     [self addEntranceWithTitle:@"Edge Detection" className:@""];
 
+    [self quickEnterViewControllerAtIndex:0];
 }
 
 
@@ -41,6 +42,11 @@
     info.title = title;
     info.viewControllerName = vcClassName;
     [_entrances addObject:info];
+}
+
+
+- (void)quickEnterViewControllerAtIndex:(NSInteger)idx {
+    [self tableView:nil didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:idx inSection:0]];
 }
 
 

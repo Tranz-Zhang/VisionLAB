@@ -14,10 +14,12 @@
 		4C289E961F754DCE00E153B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C289E941F754DCE00E153B8 /* LaunchScreen.storyboard */; };
 		4C3E719E1F78FB7B003F5AE2 /* UIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E719B1F78FB7B003F5AE2 /* UIUtility.m */; };
 		4C3E719F1F78FB7B003F5AE2 /* VLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E719D1F78FB7B003F5AE2 /* VLButton.m */; };
-		4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.m */; };
+		4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.mm */; };
 		4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71A31F78FB87003F5AE2 /* HelloOpenCVViewController.xib */; };
 		4C3E71AB1F78FBA8003F5AE2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */; };
 		4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */; };
+		4C3E71B31F7937D9003F5AE2 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B21F7937D9003F5AE2 /* avatar.png */; };
+		4C3E71B51F7937ED003F5AE2 /* sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B41F7937ED003F5AE2 /* sunset.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,11 +36,13 @@
 		4C3E719C1F78FB7B003F5AE2 /* VLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLButton.h; sourceTree = "<group>"; };
 		4C3E719D1F78FB7B003F5AE2 /* VLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLButton.m; sourceTree = "<group>"; };
 		4C3E71A11F78FB87003F5AE2 /* HelloOpenCVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloOpenCVViewController.h; sourceTree = "<group>"; };
-		4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloOpenCVViewController.m; sourceTree = "<group>"; };
+		4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloOpenCVViewController.mm; sourceTree = "<group>"; };
 		4C3E71A31F78FB87003F5AE2 /* HelloOpenCVViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloOpenCVViewController.xib; sourceTree = "<group>"; };
 		4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		4C3E71AE1F78FC14003F5AE2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4C3E71B21F7937D9003F5AE2 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		4C3E71B41F7937ED003F5AE2 /* sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunset.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		4C289E851F754DCE00E153B8 /* VisionLAB */ = {
 			isa = PBXGroup;
 			children = (
+				4C3E71B11F7937BE003F5AE2 /* Resources */,
 				4C3E71991F78FB7B003F5AE2 /* Common */,
 				4C3E71A01F78FB87003F5AE2 /* ViewControllers */,
 				4C3E71AE1F78FC14003F5AE2 /* MainViewController.h */,
@@ -111,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				4C3E71A11F78FB87003F5AE2 /* HelloOpenCVViewController.h */,
-				4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.m */,
+				4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.mm */,
 				4C3E71A31F78FB87003F5AE2 /* HelloOpenCVViewController.xib */,
 			);
 			path = ViewControllers;
@@ -123,6 +128,15 @@
 				4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C3E71B11F7937BE003F5AE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C3E71B41F7937ED003F5AE2 /* sunset.png */,
+				4C3E71B21F7937D9003F5AE2 /* avatar.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */,
+				4C3E71B31F7937D9003F5AE2 /* avatar.png in Resources */,
+				4C3E71B51F7937ED003F5AE2 /* sunset.png in Resources */,
 				4C289E961F754DCE00E153B8 /* LaunchScreen.storyboard in Resources */,
 				4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */,
 				4C289E911F754DCE00E153B8 /* Main.storyboard in Resources */,
@@ -199,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3E719E1F78FB7B003F5AE2 /* UIUtility.m in Sources */,
-				4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.m in Sources */,
+				4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */,
 				4C289E8B1F754DCE00E153B8 /* AppDelegate.m in Sources */,
 				4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */,
 				4C3E719F1F78FB7B003F5AE2 /* VLButton.m in Sources */,

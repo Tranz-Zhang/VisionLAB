@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelloOpenCVViewController">
             <connections>
+                <outlet property="resultView" destination="ffG-cW-emo" id="cmU-IC-hty"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,9 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-cW-emo">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-cW-emo">
                     <rect key="frame" x="37" y="104" width="300" height="300"/>
-                    <color key="backgroundColor" white="0.14999999999999999" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="300" id="Esa-fe-SaT"/>
                         <constraint firstAttribute="width" secondItem="ffG-cW-emo" secondAttribute="height" multiplier="1:1" id="TnF-Zy-Gaf"/>
@@ -39,6 +39,9 @@
                     <state key="normal" title="Hello OpenCV">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="onButtonClicked:" destination="-1" eventType="touchUpInside" id="Ts2-Gm-Uqo"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,4 +55,7 @@
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
 </document>
