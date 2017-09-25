@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // SETUP BASE UI STYLE
+    [UINavigationBar appearance].tintColor = [UIColor colorWithWhite:0.5 alpha:1];
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithWhite:0.8 alpha:1]};
+    [UINavigationBar appearance].barTintColor = [UIColor blackColor];
+    
     return YES;
 }
 

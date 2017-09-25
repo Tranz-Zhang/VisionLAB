@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelloOpenCVViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-cW-emo">
+                    <rect key="frame" x="37" y="104" width="300" height="300"/>
+                    <color key="backgroundColor" white="0.14999999999999999" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Esa-fe-SaT"/>
+                        <constraint firstAttribute="width" secondItem="ffG-cW-emo" secondAttribute="height" multiplier="1:1" id="TnF-Zy-Gaf"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUL-hh-u7g" customClass="VLButton">
+                    <rect key="frame" x="37" y="577" width="300" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4lW-iT-DMq"/>
+                        <constraint firstAttribute="width" constant="300" id="qyL-zw-0ZN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                    <state key="normal" title="Hello OpenCV">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sUL-hh-u7g" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="En8-hW-iUj"/>
+                <constraint firstItem="ffG-cW-emo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="asM-D3-Vo2"/>
+                <constraint firstAttribute="bottom" secondItem="sUL-hh-u7g" secondAttribute="bottom" constant="40" id="tEe-q7-wOL"/>
+                <constraint firstItem="ffG-cW-emo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yM3-rS-TkJ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
