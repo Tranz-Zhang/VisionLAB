@@ -26,11 +26,12 @@
 
     // add entrances
     [self addEntranceWithTitle:@"Base OpenCV" className:@"HelloOpenCVViewController"];
+    [self addEntranceWithTitle:@"Edge Detection" className:@"EdgeDetectionViewController"];
     [self addEntranceWithTitle:@"Convolution Test" className:@"BassOpenCVViewController"];
     [self addEntranceWithTitle:@"Gaussian Filter" className:nil];
     [self addEntranceWithTitle:@"Edge Detection" className:@""];
 
-    [self quickEnterViewControllerAtIndex:0];
+    [self quickEnterViewControllerAtIndex:1];
 }
 
 
