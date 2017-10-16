@@ -20,8 +20,11 @@
 		4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71A31F78FB87003F5AE2 /* HelloOpenCVViewController.xib */; };
 		4C3E71AB1F78FBA8003F5AE2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */; };
 		4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */; };
-		4C3E71B31F7937D9003F5AE2 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B21F7937D9003F5AE2 /* avatar.png */; };
-		4C3E71B51F7937ED003F5AE2 /* sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B41F7937ED003F5AE2 /* sunset.png */; };
+		4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B21F7937D9003F5AE2 /* music_256.png */; };
+		4C3E71B51F7937ED003F5AE2 /* sunset_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B41F7937ED003F5AE2 /* sunset_256.png */; };
+		4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */; };
+		4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE11F9507C100697A47 /* house_1024.jpg */; };
+		4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +49,11 @@
 		4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		4C3E71AE1F78FC14003F5AE2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		4C3E71B21F7937D9003F5AE2 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
-		4C3E71B41F7937ED003F5AE2 /* sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunset.png; sourceTree = "<group>"; };
+		4C3E71B21F7937D9003F5AE2 /* music_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_256.png; sourceTree = "<group>"; };
+		4C3E71B41F7937ED003F5AE2 /* sunset_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunset_256.png; sourceTree = "<group>"; };
+		4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toy_2048.jpg; sourceTree = "<group>"; };
+		4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inhouse_512.jpg; sourceTree = "<group>"; };
+		4C8D0BE11F9507C100697A47 /* house_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house_1024.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +147,11 @@
 		4C3E71B11F7937BE003F5AE2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4C3E71B41F7937ED003F5AE2 /* sunset.png */,
-				4C3E71B21F7937D9003F5AE2 /* avatar.png */,
+				4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */,
+				4C8D0BE11F9507C100697A47 /* house_1024.jpg */,
+				4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */,
+				4C3E71B41F7937ED003F5AE2 /* sunset_256.png */,
+				4C3E71B21F7937D9003F5AE2 /* music_256.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -207,9 +216,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2A13D81F9245D100C1D4B2 /* EdgeDetectionViewController.xib in Resources */,
+				4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */,
 				4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */,
-				4C3E71B31F7937D9003F5AE2 /* avatar.png in Resources */,
-				4C3E71B51F7937ED003F5AE2 /* sunset.png in Resources */,
+				4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */,
+				4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */,
+				4C3E71B51F7937ED003F5AE2 /* sunset_256.png in Resources */,
+				4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */,
 				4C289E961F754DCE00E153B8 /* LaunchScreen.storyboard in Resources */,
 				4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */,
 				4C289E911F754DCE00E153B8 /* Main.storyboard in Resources */,

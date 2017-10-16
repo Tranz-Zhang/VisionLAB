@@ -28,7 +28,7 @@ using namespace cv;
 - (IBAction)onButtonClicked:(UIButton *)sender {
     // UIImage to Mat (0.5ms)
     Mat matImage;
-    UIImage *sourceImage = [UIImage imageNamed:@"avatar"];
+    UIImage *sourceImage = [UIImage imageNamed:@"house_1024.jpg"];
     CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
     UIImageToMat(sourceImage, matImage);
     printf("UIImage to Mat: %.4f ms\n", (CFAbsoluteTimeGetCurrent() - startTime) * 1000);

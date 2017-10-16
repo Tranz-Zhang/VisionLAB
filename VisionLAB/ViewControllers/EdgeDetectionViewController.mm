@@ -14,6 +14,7 @@ using namespace cv;
 
 @interface EdgeDetectionViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *resultView;
 @property (weak, nonatomic) IBOutlet UILabel *thresholdLabel1;
 @property (weak, nonatomic) IBOutlet UISlider *thresholdSlider1;
@@ -38,15 +39,19 @@ using namespace cv;
 
 
 - (IBAction)onCannyEdgeProcess:(id)sender {
+    CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
+    
     Mat sourceMat;
     Mat grayMat;
     Mat resultMat;
-    UIImage *img = [UIImage imageNamed:@"avatar"];
+    UIImage *img = [UIImage imageNamed:@"house_1024.jpg"];
     UIImageToMat(img, sourceMat);
     cvtColor(sourceMat, grayMat, CV_RGB2GRAY);
     blur(grayMat, resultMat, cv::Size(3, 3));
     Canny(resultMat, resultMat, self.thresholdSlider1.value, self.thresholdSlider2.value);
     
+    double duration = CFAbsoluteTimeGetCurrent() - startTime;
+    self.infoLabel.text = [NSString stringWithFormat:@"%.2fms", duration * 1000];
     self.resultView.image = MatToUIImage(resultMat);
 }
 
