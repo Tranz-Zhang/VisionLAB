@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="C2AL1ViewController">
+            <connections>
+                <outlet property="infoLabel" destination="rBF-b1-kZR" id="9Dl-Z2-wgN"/>
+                <outlet property="resultView" destination="Cwb-V3-asr" id="mKZ-qW-qlu"/>
+                <outlet property="view" destination="V2R-Rr-mXK" id="wAc-Y4-RAM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="V2R-Rr-mXK">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="Cwb-V3-asr">
+                    <rect key="frame" x="37" y="100" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="aAa-yG-Qoi"/>
+                        <constraint firstAttribute="width" secondItem="Cwb-V3-asr" secondAttribute="height" multiplier="1:1" id="mia-yv-xxv"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z97-5O-RFT" customClass="VLButton">
+                    <rect key="frame" x="37" y="577" width="300" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YD7-2n-uFt"/>
+                        <constraint firstAttribute="width" constant="300" id="mJD-kM-oxK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                    <state key="normal" title="Load Image(CV)">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onLoadImage:" destination="-1" eventType="touchUpInside" id="Ucw-XP-abL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBF-b1-kZR">
+                    <rect key="frame" x="183" y="408" width="8.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="z97-5O-RFT" secondAttribute="bottom" constant="40" id="57s-gw-IyP"/>
+                <constraint firstItem="Cwb-V3-asr" firstAttribute="centerX" secondItem="V2R-Rr-mXK" secondAttribute="centerX" id="J1W-rQ-RB5"/>
+                <constraint firstItem="z97-5O-RFT" firstAttribute="centerX" secondItem="V2R-Rr-mXK" secondAttribute="centerX" id="NLn-K6-dio"/>
+                <constraint firstItem="rBF-b1-kZR" firstAttribute="centerX" secondItem="Cwb-V3-asr" secondAttribute="centerX" id="nlH-O8-3g9"/>
+                <constraint firstItem="rBF-b1-kZR" firstAttribute="top" secondItem="Cwb-V3-asr" secondAttribute="bottom" constant="8" id="o6X-qc-tHU"/>
+                <constraint firstItem="Cwb-V3-asr" firstAttribute="width" secondItem="Cwb-V3-asr" secondAttribute="height" multiplier="1:1" id="oCY-SA-zTg"/>
+                <constraint firstItem="Cwb-V3-asr" firstAttribute="top" secondItem="V2R-Rr-mXK" secondAttribute="top" constant="100" id="rjf-g4-3bY"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
+</document>
