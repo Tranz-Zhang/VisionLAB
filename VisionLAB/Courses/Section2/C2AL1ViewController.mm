@@ -32,7 +32,7 @@ using namespace cv;
     UIImage *sourceImage = [UIImage imageNamed:@"house_1024.jpg"];
     CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
     UIImageToMat(sourceImage, matImage);
-    printf("UIImage to Mat: %.4f ms\n", (CFAbsoluteTimeGetCurrent() - startTime) * 1000);
+    self.infoLabel.text = [NSString stringWithFormat:@"%.2f ms", (CFAbsoluteTimeGetCurrent() - startTime) * 1000];
     
     // Mat to UIImage (0.1ms)
     startTime = CFAbsoluteTimeGetCurrent();

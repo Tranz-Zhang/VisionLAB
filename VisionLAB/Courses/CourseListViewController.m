@@ -8,6 +8,7 @@
 
 #import "CourseListViewController.h"
 #import "C2AL1ViewController.h"
+#import "C2BL1ViewController.h"
 
 @interface CourseInfo : NSObject
 @property (nonatomic, copy) NSAttributedString *title;
@@ -32,8 +33,9 @@
     [self addEntranceWithTitle:@"2A-L3 Linearity and convolution" className:nil];
     [self addEntranceWithTitle:@"2A-L4 Filter as templates" className:nil];
     [self addEntranceWithTitle:@"2A-L5 Edge Detection" className:nil];
+    [self addEntranceWithTitle:@"2B-L1 Hough transforms: Lines" className:@"C2BL1ViewController"];
     
-    [self quickEnterViewControllerAtIndex:0];
+    [self quickEnterViewControllerAtIndex:5];
 }
 
 
