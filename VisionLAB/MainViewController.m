@@ -40,7 +40,7 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     // add LAB entrances
     [self addLabEntranceWithTitle:@"Base OpenCV" className:@"HelloOpenCVViewController"];
     [self addLabEntranceWithTitle:@"Edge Detection" className:@"EdgeDetectionViewController"];
-    
+    [self addLabEntranceWithTitle:@"Camera Test" className:@"CameraViewController"];
     
     // add Course entrances
     [self addCourseEntranceWithTitle:@"2A-L1 Images as functions" className:@"C2AL1ViewController"];
@@ -51,7 +51,7 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [self addCourseEntranceWithTitle:@"2B-L1 Hough transforms: Lines" className:@"C2BL1ViewController"];
     
     _currentEntranceType = EntranceTypeUnknown;
-    [self swtichToEntrance:EntranceTypeCourse animated:NO];
+    [self swtichToEntrance:EntranceTypeLab animated:NO];
     [self quickEnterViewControllerAtIndex:5];
 }
 
@@ -92,6 +92,10 @@ typedef NS_ENUM(NSInteger, EntranceType) {
 
 
 - (void)quickEnterViewControllerAtIndex:(NSInteger)idx {
+    if (idx >= _mainList.count) {
+        NSLog(@"Error: invalid entrance index: %d", (int)idx);
+        return;
+    }
     [self tableView:self.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:idx inSection:0]];
 }
 
