@@ -97,6 +97,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C18B74B1F9901D6005FC7E8 /* VLCamera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VLCamera;
+			sourceTree = "<group>";
+		};
 		4C289E7A1F754DCE00E153B8 = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +173,8 @@
 		4C3E71991F78FB7B003F5AE2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				4C7C13611F97805D0032628E /* VLGraphicTool */,
+				4C18B74B1F9901D6005FC7E8 /* VLCamera */,
+				4C7C13611F97805D0032628E /* VLDrawTool */,
 				4C2A13D91F9246B300C1D4B2 /* LabUtils.h */,
 				4C2A13DA1F9246B300C1D4B2 /* LabUtils.m */,
 				4C3E719C1F78FB7B003F5AE2 /* VLButton.h */,
@@ -210,14 +218,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4C7C13611F97805D0032628E /* VLGraphicTool */ = {
+		4C7C13611F97805D0032628E /* VLDrawTool */ = {
 			isa = PBXGroup;
 			children = (
 				4C7C136B1F9781010032628E /* DrawObjects */,
 				4C7C13681F9780EA0032628E /* VLDrawView.h */,
 				4C7C13691F9780EA0032628E /* VLDrawView.m */,
 			);
-			path = VLGraphicTool;
+			path = VLDrawTool;
 			sourceTree = "<group>";
 		};
 		4C7C136B1F9781010032628E /* DrawObjects */ = {
