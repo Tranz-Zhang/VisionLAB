@@ -27,7 +27,6 @@ using namespace cv;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Edge Detection";
     self.thresholdLabel1.text = [NSString stringWithFormat:@"Threshold01: %.2f", self.thresholdSlider1.value];
     self.thresholdLabel2.text = [NSString stringWithFormat:@"Threshold02: %.2f", self.thresholdSlider1.value];
 }

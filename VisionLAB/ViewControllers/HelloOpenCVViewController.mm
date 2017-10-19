@@ -21,7 +21,6 @@ using namespace cv;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Hello OpenCV";
     Mat kernal;
 }
 

@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // SETUP BASE UI STYLE
     [UINavigationBar appearance].tintColor = [UIColor colorWithWhite:0.5 alpha:1];
-    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithWhite:0.8 alpha:1]};
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithWhite:0.9 alpha:1]};
     [UINavigationBar appearance].barTintColor = [UIColor blackColor];
     
     return YES;
