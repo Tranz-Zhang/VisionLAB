@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B74D1F990525005FC7E8 /* VLCamera.m */; };
+		4C18B7501F99056F005FC7E8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C18B74F1F99056F005FC7E8 /* GLKit.framework */; };
+		4C18B7561F990721005FC7E8 /* VLDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7551F990721005FC7E8 /* VLDisplayer.m */; };
 		4C289E881F754DCE00E153B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C289E871F754DCE00E153B8 /* main.m */; };
 		4C289E8B1F754DCE00E153B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C289E8A1F754DCE00E153B8 /* AppDelegate.m */; };
 		4C289E911F754DCE00E153B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C289E8F1F754DCE00E153B8 /* Main.storyboard */; };
@@ -39,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C18B74C1F990525005FC7E8 /* VLCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLCamera.h; sourceTree = "<group>"; };
+		4C18B74D1F990525005FC7E8 /* VLCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLCamera.m; sourceTree = "<group>"; };
+		4C18B74F1F99056F005FC7E8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		4C18B7541F990721005FC7E8 /* VLDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLDisplayer.h; sourceTree = "<group>"; };
+		4C18B7551F990721005FC7E8 /* VLDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLDisplayer.m; sourceTree = "<group>"; };
 		4C289E831F754DCE00E153B8 /* VisionLAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionLAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C289E871F754DCE00E153B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C289E891F754DCE00E153B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C18B7501F99056F005FC7E8 /* GLKit.framework in Frameworks */,
 				4C3E71AB1F78FBA8003F5AE2 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,11 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C18B74B1F9901D6005FC7E8 /* VLCamera */ = {
+		4C18B74B1F9901D6005FC7E8 /* VLVideo */ = {
 			isa = PBXGroup;
 			children = (
+				4C18B74C1F990525005FC7E8 /* VLCamera.h */,
+				4C18B74D1F990525005FC7E8 /* VLCamera.m */,
+				4C18B7541F990721005FC7E8 /* VLDisplayer.h */,
+				4C18B7551F990721005FC7E8 /* VLDisplayer.m */,
 			);
-			path = VLCamera;
+			path = VLVideo;
 			sourceTree = "<group>";
 		};
 		4C289E7A1F754DCE00E153B8 = {
@@ -173,7 +186,7 @@
 		4C3E71991F78FB7B003F5AE2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				4C18B74B1F9901D6005FC7E8 /* VLCamera */,
+				4C18B74B1F9901D6005FC7E8 /* VLVideo */,
 				4C7C13611F97805D0032628E /* VLDrawTool */,
 				4C2A13D91F9246B300C1D4B2 /* LabUtils.h */,
 				4C2A13DA1F9246B300C1D4B2 /* LabUtils.m */,
@@ -199,6 +212,7 @@
 		4C3E71A71F78FBA8003F5AE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C18B74F1F99056F005FC7E8 /* GLKit.framework */,
 				4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */,
 			);
 			path = Frameworks;
@@ -333,7 +347,9 @@
 				4C7C135F1F977C450032628E /* C2BL1ViewController.mm in Sources */,
 				4C289E8B1F754DCE00E153B8 /* AppDelegate.m in Sources */,
 				4C7C136A1F9780EA0032628E /* VLDrawView.m in Sources */,
+				4C18B7561F990721005FC7E8 /* VLDisplayer.m in Sources */,
 				4C7C13741F978A950032628E /* VLCircle.m in Sources */,
+				4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */,
 				4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */,
 				4C3E719F1F78FB7B003F5AE2 /* VLButton.m in Sources */,
 				4C3DF2FB1F966DAE007F6986 /* C2AL1ViewController.mm in Sources */,
