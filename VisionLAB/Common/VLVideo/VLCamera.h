@@ -18,6 +18,9 @@
 @property (nonatomic, weak) id <VLCameraProtocol> delegate;
 @property (nonatomic, readonly) BOOL isCapturing;
 
+// check permission for camera access
++ (void)checkPermission:(void(^)(BOOL granted))completion;
+
 - (BOOL)startCapture;
 - (void)stopCapture;
 

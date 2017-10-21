@@ -8,8 +8,11 @@
 
 #import "CameraViewController.h"
 #import "VLButton.h"
+#import "VLCamera.h"
 
-@interface CameraViewController ()
+@interface CameraViewController () {
+    VLCamera *_camera;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *displayView;
 @property (weak, nonatomic) IBOutlet VLButton *operateButton;
 
@@ -19,12 +22,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    _camera = [VLCamera new];
+    [VLCamera checkPermission:^(BOOL granted) {
+        NSLog(@"Check camera permission: %@", granted ? @"OK" : @"Failed");
+    }];
 }
 
 
-- (IBAction)onOperateButtonClicked:(UIButton *)sender {
-    
+- (IBAction)onOperateButtonClicked:(UIButton *)button {
+    if (_camera.isCapturing) {
+        [_camera stopCapture];
+        [button setTitle:@"Start" forState:UIControlStateNormal];
+        
+    } else {
+        [_camera startCapture];
+        [button setTitle:@"Stop" forState:UIControlStateNormal];
+    }
 }
 
 

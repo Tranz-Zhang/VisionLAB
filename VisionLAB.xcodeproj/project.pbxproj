@@ -29,6 +29,21 @@
 		4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */; };
 		4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B21F7937D9003F5AE2 /* music_256.png */; };
 		4C3E71B51F7937ED003F5AE2 /* sunset_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B41F7937ED003F5AE2 /* sunset_256.png */; };
+		4C42981F1F9B268E0080667C /* RendererViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C42981E1F9B268E0080667C /* RendererViewController.mm */; };
+		4C4298211F9B26A60080667C /* RendererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4298201F9B26A60080667C /* RendererViewController.xib */; };
+		4C4298781F9B2D8C0080667C /* VLGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298751F9B2D890080667C /* VLGLProgram.m */; };
+		4C4298791F9B2D8C0080667C /* VLTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298771F9B2D890080667C /* VLTextureCache.m */; };
+		4C42987A1F9B2D910080667C /* VLImageRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298521F9B2D650080667C /* VLImageRenderer.mm */; };
+		4C42987B1F9B2D910080667C /* VLImageRenderGroup.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298541F9B2D650080667C /* VLImageRenderGroup.mm */; };
+		4C42987C1F9B2D910080667C /* VLPixelLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298561F9B2D650080667C /* VLPixelLayer.mm */; };
+		4C42987D1F9B2DB20080667C /* gles_program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C42985F1F9B2D650080667C /* gles_program.cpp */; };
+		4C42987E1F9B2DB20080667C /* red_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298651F9B2D650080667C /* red_renderer.cpp */; };
+		4C42987F1F9B2DB20080667C /* test_renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298671F9B2D650080667C /* test_renderer.cpp */; };
+		4C4298801F9B2DB20080667C /* renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298691F9B2D650080667C /* renderer.cpp */; };
+		4C4298811F9B2DB20080667C /* renderer_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C42986B1F9B2D650080667C /* renderer_factory.cpp */; };
+		4C4298821F9B2DB20080667C /* render_group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C42986D1F9B2D650080667C /* render_group.cpp */; };
+		4C4298831F9B2DB20080667C /* pixel_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C42986F1F9B2D650080667C /* pixel_layer.cpp */; };
+		4C4298841F9B2DB20080667C /* texture_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298711F9B2D650080667C /* texture_loader.cpp */; };
 		4C7C135F1F977C450032628E /* C2BL1ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C135D1F977C450032628E /* C2BL1ViewController.mm */; };
 		4C7C13601F977C450032628E /* C2BL1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7C135E1F977C450032628E /* C2BL1ViewController.xib */; };
 		4C7C13671F9780C20032628E /* VLDrawObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C13661F9780C20032628E /* VLDrawObject.m */; };
@@ -78,6 +93,43 @@
 		4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4C3E71B21F7937D9003F5AE2 /* music_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_256.png; sourceTree = "<group>"; };
 		4C3E71B41F7937ED003F5AE2 /* sunset_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunset_256.png; sourceTree = "<group>"; };
+		4C42981D1F9B268E0080667C /* RendererViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererViewController.h; sourceTree = "<group>"; };
+		4C42981E1F9B268E0080667C /* RendererViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererViewController.mm; sourceTree = "<group>"; };
+		4C4298201F9B26A60080667C /* RendererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RendererViewController.xib; sourceTree = "<group>"; };
+		4C4298511F9B2D650080667C /* VLImageRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLImageRenderer.h; sourceTree = "<group>"; };
+		4C4298521F9B2D650080667C /* VLImageRenderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLImageRenderer.mm; sourceTree = "<group>"; };
+		4C4298531F9B2D650080667C /* VLImageRenderGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLImageRenderGroup.h; sourceTree = "<group>"; };
+		4C4298541F9B2D650080667C /* VLImageRenderGroup.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLImageRenderGroup.mm; sourceTree = "<group>"; };
+		4C4298551F9B2D650080667C /* VLPixelLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLPixelLayer.h; sourceTree = "<group>"; };
+		4C4298561F9B2D650080667C /* VLPixelLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLPixelLayer.mm; sourceTree = "<group>"; };
+		4C4298581F9B2D650080667C /* VLImageRenderer_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLImageRenderer_Private.h; sourceTree = "<group>"; };
+		4C4298591F9B2D650080667C /* VLPixelLayer_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLPixelLayer_Private.h; sourceTree = "<group>"; };
+		4C42985C1F9B2D650080667C /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		4C42985D1F9B2D650080667C /* renderer_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = renderer_types.h; sourceTree = "<group>"; };
+		4C42985E1F9B2D650080667C /* geometry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = geometry.hpp; sourceTree = "<group>"; };
+		4C42985F1F9B2D650080667C /* gles_program.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gles_program.cpp; sourceTree = "<group>"; };
+		4C4298601F9B2D650080667C /* gles_program.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gles_program.hpp; sourceTree = "<group>"; };
+		4C4298611F9B2D650080667C /* log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		4C4298621F9B2D650080667C /* pixel_layer_defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pixel_layer_defines.h; sourceTree = "<group>"; };
+		4C4298631F9B2D650080667C /* shader_structs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shader_structs.h; sourceTree = "<group>"; };
+		4C4298651F9B2D650080667C /* red_renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = red_renderer.cpp; sourceTree = "<group>"; };
+		4C4298661F9B2D650080667C /* red_renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = red_renderer.hpp; sourceTree = "<group>"; };
+		4C4298671F9B2D650080667C /* test_renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_renderer.cpp; sourceTree = "<group>"; };
+		4C4298681F9B2D650080667C /* test_renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = test_renderer.hpp; sourceTree = "<group>"; };
+		4C4298691F9B2D650080667C /* renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = renderer.cpp; sourceTree = "<group>"; };
+		4C42986A1F9B2D650080667C /* renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = renderer.hpp; sourceTree = "<group>"; };
+		4C42986B1F9B2D650080667C /* renderer_factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = renderer_factory.cpp; sourceTree = "<group>"; };
+		4C42986C1F9B2D650080667C /* renderer_factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = renderer_factory.hpp; sourceTree = "<group>"; };
+		4C42986D1F9B2D650080667C /* render_group.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = render_group.cpp; sourceTree = "<group>"; };
+		4C42986E1F9B2D650080667C /* render_group.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = render_group.hpp; sourceTree = "<group>"; };
+		4C42986F1F9B2D650080667C /* pixel_layer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pixel_layer.cpp; sourceTree = "<group>"; };
+		4C4298701F9B2D650080667C /* pixel_layer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pixel_layer.hpp; sourceTree = "<group>"; };
+		4C4298711F9B2D650080667C /* texture_loader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = texture_loader.cpp; sourceTree = "<group>"; };
+		4C4298721F9B2D650080667C /* texture_loader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = texture_loader.hpp; sourceTree = "<group>"; };
+		4C4298741F9B2D890080667C /* VLGLProgram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLGLProgram.h; sourceTree = "<group>"; };
+		4C4298751F9B2D890080667C /* VLGLProgram.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLGLProgram.m; sourceTree = "<group>"; };
+		4C4298761F9B2D890080667C /* VLTextureCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLTextureCache.h; sourceTree = "<group>"; };
+		4C4298771F9B2D890080667C /* VLTextureCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLTextureCache.m; sourceTree = "<group>"; };
 		4C7C135C1F977C450032628E /* C2BL1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2BL1ViewController.h; sourceTree = "<group>"; };
 		4C7C135D1F977C450032628E /* C2BL1ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = C2BL1ViewController.mm; sourceTree = "<group>"; };
 		4C7C135E1F977C450032628E /* C2BL1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = C2BL1ViewController.xib; sourceTree = "<group>"; };
@@ -191,6 +243,7 @@
 		4C3E71991F78FB7B003F5AE2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4C4297F11F9B260E0080667C /* VLRenderer */,
 				4C18B74B1F9901D6005FC7E8 /* VLVideo */,
 				4C7C13611F97805D0032628E /* VLDrawTool */,
 				4C2A13D91F9246B300C1D4B2 /* LabUtils.h */,
@@ -213,6 +266,9 @@
 				4C18B7571F990B33005FC7E8 /* CameraViewController.h */,
 				4C18B7581F990B33005FC7E8 /* CameraViewController.m */,
 				4C18B7591F990B33005FC7E8 /* CameraViewController.xib */,
+				4C42981D1F9B268E0080667C /* RendererViewController.h */,
+				4C42981E1F9B268E0080667C /* RendererViewController.mm */,
+				4C4298201F9B26A60080667C /* RendererViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -238,6 +294,95 @@
 				4C3E71B21F7937D9003F5AE2 /* music_256.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C4297F11F9B260E0080667C /* VLRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				4C4298731F9B2D890080667C /* OpenGLTool */,
+				4C4298501F9B2D650080667C /* iOS */,
+				4C42985A1F9B2D650080667C /* core_cpp */,
+			);
+			path = VLRenderer;
+			sourceTree = "<group>";
+		};
+		4C4298501F9B2D650080667C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C4298511F9B2D650080667C /* VLImageRenderer.h */,
+				4C4298521F9B2D650080667C /* VLImageRenderer.mm */,
+				4C4298531F9B2D650080667C /* VLImageRenderGroup.h */,
+				4C4298541F9B2D650080667C /* VLImageRenderGroup.mm */,
+				4C4298551F9B2D650080667C /* VLPixelLayer.h */,
+				4C4298561F9B2D650080667C /* VLPixelLayer.mm */,
+				4C4298571F9B2D650080667C /* Privates */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		4C4298571F9B2D650080667C /* Privates */ = {
+			isa = PBXGroup;
+			children = (
+				4C4298581F9B2D650080667C /* VLImageRenderer_Private.h */,
+				4C4298591F9B2D650080667C /* VLPixelLayer_Private.h */,
+			);
+			path = Privates;
+			sourceTree = "<group>";
+		};
+		4C42985A1F9B2D650080667C /* core_cpp */ = {
+			isa = PBXGroup;
+			children = (
+				4C42985B1F9B2D650080667C /* common */,
+				4C4298641F9B2D650080667C /* custom_renderers */,
+				4C4298691F9B2D650080667C /* renderer.cpp */,
+				4C42986A1F9B2D650080667C /* renderer.hpp */,
+				4C42986B1F9B2D650080667C /* renderer_factory.cpp */,
+				4C42986C1F9B2D650080667C /* renderer_factory.hpp */,
+				4C42986D1F9B2D650080667C /* render_group.cpp */,
+				4C42986E1F9B2D650080667C /* render_group.hpp */,
+				4C42986F1F9B2D650080667C /* pixel_layer.cpp */,
+				4C4298701F9B2D650080667C /* pixel_layer.hpp */,
+				4C4298711F9B2D650080667C /* texture_loader.cpp */,
+				4C4298721F9B2D650080667C /* texture_loader.hpp */,
+			);
+			path = core_cpp;
+			sourceTree = "<group>";
+		};
+		4C42985B1F9B2D650080667C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				4C42985C1F9B2D650080667C /* common.h */,
+				4C42985D1F9B2D650080667C /* renderer_types.h */,
+				4C42985E1F9B2D650080667C /* geometry.hpp */,
+				4C42985F1F9B2D650080667C /* gles_program.cpp */,
+				4C4298601F9B2D650080667C /* gles_program.hpp */,
+				4C4298611F9B2D650080667C /* log.h */,
+				4C4298621F9B2D650080667C /* pixel_layer_defines.h */,
+				4C4298631F9B2D650080667C /* shader_structs.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		4C4298641F9B2D650080667C /* custom_renderers */ = {
+			isa = PBXGroup;
+			children = (
+				4C4298651F9B2D650080667C /* red_renderer.cpp */,
+				4C4298661F9B2D650080667C /* red_renderer.hpp */,
+				4C4298671F9B2D650080667C /* test_renderer.cpp */,
+				4C4298681F9B2D650080667C /* test_renderer.hpp */,
+			);
+			path = custom_renderers;
+			sourceTree = "<group>";
+		};
+		4C4298731F9B2D890080667C /* OpenGLTool */ = {
+			isa = PBXGroup;
+			children = (
+				4C4298741F9B2D890080667C /* VLGLProgram.h */,
+				4C4298751F9B2D890080667C /* VLGLProgram.m */,
+				4C4298761F9B2D890080667C /* VLTextureCache.h */,
+				4C4298771F9B2D890080667C /* VLTextureCache.m */,
+			);
+			path = OpenGLTool;
 			sourceTree = "<group>";
 		};
 		4C7C13611F97805D0032628E /* VLDrawTool */ = {
@@ -325,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2A13D81F9245D100C1D4B2 /* EdgeDetectionViewController.xib in Resources */,
+				4C4298211F9B26A60080667C /* RendererViewController.xib in Resources */,
 				4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */,
 				4C7C13761F97935E0032628E /* simple_shapes_512.png in Resources */,
 				4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */,
@@ -351,17 +497,31 @@
 			files = (
 				4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */,
 				4C2A13DE1F9249D500C1D4B2 /* EdgeDetectionViewController.mm in Sources */,
+				4C4298791F9B2D8C0080667C /* VLTextureCache.m in Sources */,
 				4C7C13671F9780C20032628E /* VLDrawObject.m in Sources */,
+				4C4298811F9B2DB20080667C /* renderer_factory.cpp in Sources */,
+				4C4298781F9B2D8C0080667C /* VLGLProgram.m in Sources */,
+				4C42987F1F9B2DB20080667C /* test_renderer.cpp in Sources */,
 				4C7C136E1F9785420032628E /* VLLine.m in Sources */,
 				4C7C135F1F977C450032628E /* C2BL1ViewController.mm in Sources */,
 				4C289E8B1F754DCE00E153B8 /* AppDelegate.m in Sources */,
 				4C7C136A1F9780EA0032628E /* VLDrawView.m in Sources */,
 				4C18B7561F990721005FC7E8 /* VLDisplayer.m in Sources */,
+				4C42987E1F9B2DB20080667C /* red_renderer.cpp in Sources */,
+				4C42987B1F9B2D910080667C /* VLImageRenderGroup.mm in Sources */,
+				4C4298831F9B2DB20080667C /* pixel_layer.cpp in Sources */,
+				4C4298801F9B2DB20080667C /* renderer.cpp in Sources */,
 				4C7C13741F978A950032628E /* VLCircle.m in Sources */,
+				4C4298821F9B2DB20080667C /* render_group.cpp in Sources */,
 				4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */,
 				4C18B75A1F990B33005FC7E8 /* CameraViewController.m in Sources */,
+				4C42987A1F9B2D910080667C /* VLImageRenderer.mm in Sources */,
+				4C42987C1F9B2D910080667C /* VLPixelLayer.mm in Sources */,
+				4C42981F1F9B268E0080667C /* RendererViewController.mm in Sources */,
 				4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */,
+				4C4298841F9B2DB20080667C /* texture_loader.cpp in Sources */,
 				4C3E719F1F78FB7B003F5AE2 /* VLButton.m in Sources */,
+				4C42987D1F9B2DB20080667C /* gles_program.cpp in Sources */,
 				4C3DF2FB1F966DAE007F6986 /* C2AL1ViewController.mm in Sources */,
 				4C7C13711F9789430032628E /* VLRectangle.m in Sources */,
 				4C2A13DB1F9246B300C1D4B2 /* LabUtils.m in Sources */,

@@ -14,8 +14,6 @@
  */
 @interface VLDisplayer : NSObject
 
-- (instancetype)initWithSize:(CGSize)canvasSize;
-
 @property (nonatomic, readonly) UIView *view;
 
 - (void)updateWithPixelBuffer:(CVPixelBufferRef)pixelBuffer;

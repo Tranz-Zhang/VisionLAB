@@ -41,12 +41,14 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [self addLabEntranceWithTitle:@"Base OpenCV" className:@"HelloOpenCVViewController"];
     [self addLabEntranceWithTitle:@"Edge Detection" className:@"EdgeDetectionViewController"];
     [self addLabEntranceWithTitle:@"Camera Test" className:@"CameraViewController"];
+    [self addLabEntranceWithTitle:@"Renderer Test" className:@"RendererViewController"];
+    
     
     // add Course entrances
     [self addCourseEntranceWithTitle:@"2A-L1 Images as functions" className:@"C2AL1ViewController"];
     [self addCourseEntranceWithTitle:@"2A-L2 Filtering" className:nil];
     [self addCourseEntranceWithTitle:@"2A-L3 Linearity and convolution" className:nil];
-    [self addCourseEntranceWithTitle:@"2A-L4 Filter as templates" className:nil];
+    [self addCourseEntranceWithTitle:@"2A-L4 Renderer as templates" className:nil];
     [self addCourseEntranceWithTitle:@"2A-L5 Edge Detection" className:nil];
     [self addCourseEntranceWithTitle:@"2B-L1 Hough transforms: Lines" className:@"C2BL1ViewController"];
     
