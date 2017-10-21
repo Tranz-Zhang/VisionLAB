@@ -146,6 +146,10 @@
 #pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     printf("capture\n");
+    if ([self.delegate respondsToSelector:@selector(camera:didOutputPixelBuffer:)]) {
+        CVPixelBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+        [self.delegate camera:self didOutputPixelBuffer:imageBuffer];
+    }
 }
 
 

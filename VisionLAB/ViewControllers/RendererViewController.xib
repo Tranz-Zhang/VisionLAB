@@ -50,16 +50,33 @@
                     <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnY-af-iBX" customClass="VLButton">
+                    <rect key="frame" x="37" y="503" width="300" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5af-s2-JyP"/>
+                        <constraint firstAttribute="width" constant="300" id="sXm-dM-zJv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                    <state key="normal" title="Test VLDisplayer">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTestVLDisplayer:" destination="-1" eventType="touchUpInside" id="Lvo-Hh-ZwU"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Vyf-zi-zSp" firstAttribute="centerX" secondItem="NL7-Wd-5bO" secondAttribute="centerX" id="1MZ-Ik-CCR"/>
                 <constraint firstItem="Vyf-zi-zSp" firstAttribute="width" secondItem="Vyf-zi-zSp" secondAttribute="height" multiplier="1:1" id="GP4-Ws-gnT"/>
+                <constraint firstItem="A0G-WM-Lqf" firstAttribute="top" secondItem="DnY-af-iBX" secondAttribute="bottom" constant="24" id="Kc6-tm-78u"/>
                 <constraint firstAttribute="bottom" secondItem="A0G-WM-Lqf" secondAttribute="bottom" constant="40" id="OP1-9f-mC7"/>
                 <constraint firstItem="vVy-uA-dMV" firstAttribute="centerX" secondItem="Vyf-zi-zSp" secondAttribute="centerX" id="Qc7-9z-KI4"/>
                 <constraint firstItem="vVy-uA-dMV" firstAttribute="top" secondItem="Vyf-zi-zSp" secondAttribute="bottom" constant="8" id="UUH-7C-gek"/>
                 <constraint firstItem="A0G-WM-Lqf" firstAttribute="centerX" secondItem="NL7-Wd-5bO" secondAttribute="centerX" id="Vha-AJ-fBE"/>
                 <constraint firstItem="Vyf-zi-zSp" firstAttribute="top" secondItem="NL7-Wd-5bO" secondAttribute="top" constant="100" id="ftF-7f-Q4s"/>
+                <constraint firstItem="DnY-af-iBX" firstAttribute="centerX" secondItem="A0G-WM-Lqf" secondAttribute="centerX" id="h3H-64-vaC"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>

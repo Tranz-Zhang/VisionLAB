@@ -46,6 +46,11 @@ typedef NS_ENUM(NSUInteger, VLPixelLayerType) {
      Use pure OpenGL texture as image storage format. Can not be read by CPU
      */
     VLPixelLayerTypeOpenGLTexture,
+    
+    /**
+     With no content buffer. Only a preset framebuffer as rendering destination
+     */
+    VLPixelLayerTypeFramebuffer,
 };
 
 @interface VLPixelLayer : NSObject
@@ -81,25 +86,46 @@ typedef NS_ENUM(NSUInteger, VLPixelLayerType) {
 @property (nonatomic, readonly) CGSize contentSize;
 
 
-/** Create a layer with empty content. With layer type of VLPixelLayerTypePixelBuffer
- @note Mostly used as a destination layer in the renderer. The frame and content's
-       size will be the same as the source layer
+/**
+ Create a layer filled with the specified UIImage.
+ 
+ Layer type : VLPixelLayerTypeOpenGLTexture
+ 
+ @note ONLY used as a source layer in the renderer.
  */
-+ (instancetype)layerWithSize:(CGSize)size;
++ (instancetype)sourceLayerWithImage:(UIImage *)image;
 
 
-/** Create a layer filled with the specified pixelBuffer. With layer type of
- VLPixelLayerTypePixelBuffer
- @note Mostly used as a source layer in the renderer.
+/**
+ Create a layer filled with the specified pixelBuffer.
+ 
+ Layer type : VLPixelLayerTypePixelBuffer
+ 
+ @note Mostly used as a source layer in the renderer, can also used as a destination layer
  */
 + (instancetype)layerWithPixelBuffer:(CVPixelBufferRef)pixelBuffer;
 
 
-/** Create a layer filled with the specified UIImage. With layer type of
- VLPixelLayerTypeOpenGLTexture
- @note Mostly used as a source layer in the renderer.
+/**
+ Create a layer with empty content.
+ 
+ Layer type : VLPixelLayerTypePixelBuffer
+ 
+ @note ONLY used as a destination layer in the renderer. The frame and content's
+       size will be the same as the source layer
  */
-+ (instancetype)layerWithImage:(UIImage *)image;
++ (instancetype)destinationLayerWithSize:(CGSize)size;
+
+
+/** Create a layer with a preset framebuffer.
+ 
+ Layer type : VLPixelLayerTypeFramebuffer
+ 
+ @note ONLY used as a destination layer in the renderer.
+ */
++ (instancetype)destinationLayerWithFramebuffer:(GLuint)framebuffer;
+
+
 
 
 @end

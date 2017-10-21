@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B74D1F990525005FC7E8 /* VLCamera.m */; };
 		4C18B7501F99056F005FC7E8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C18B74F1F99056F005FC7E8 /* GLKit.framework */; };
-		4C18B7561F990721005FC7E8 /* VLDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7551F990721005FC7E8 /* VLDisplayer.m */; };
+		4C18B7561F990721005FC7E8 /* VLDisplayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7551F990721005FC7E8 /* VLDisplayer.mm */; };
 		4C18B75A1F990B33005FC7E8 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7581F990B33005FC7E8 /* CameraViewController.m */; };
 		4C18B75B1F990B33005FC7E8 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C18B7591F990B33005FC7E8 /* CameraViewController.xib */; };
 		4C289E881F754DCE00E153B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C289E871F754DCE00E153B8 /* main.m */; };
@@ -63,7 +63,7 @@
 		4C18B74D1F990525005FC7E8 /* VLCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLCamera.m; sourceTree = "<group>"; };
 		4C18B74F1F99056F005FC7E8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		4C18B7541F990721005FC7E8 /* VLDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLDisplayer.h; sourceTree = "<group>"; };
-		4C18B7551F990721005FC7E8 /* VLDisplayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLDisplayer.m; sourceTree = "<group>"; };
+		4C18B7551F990721005FC7E8 /* VLDisplayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLDisplayer.mm; sourceTree = "<group>"; };
 		4C18B7571F990B33005FC7E8 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		4C18B7581F990B33005FC7E8 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		4C18B7591F990B33005FC7E8 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 				4C18B74C1F990525005FC7E8 /* VLCamera.h */,
 				4C18B74D1F990525005FC7E8 /* VLCamera.m */,
 				4C18B7541F990721005FC7E8 /* VLDisplayer.h */,
-				4C18B7551F990721005FC7E8 /* VLDisplayer.m */,
+				4C18B7551F990721005FC7E8 /* VLDisplayer.mm */,
 			);
 			path = VLVideo;
 			sourceTree = "<group>";
@@ -334,16 +334,16 @@
 			children = (
 				4C42985B1F9B2D650080667C /* common */,
 				4C4298641F9B2D650080667C /* custom_renderers */,
-				4C4298691F9B2D650080667C /* renderer.cpp */,
 				4C42986A1F9B2D650080667C /* renderer.hpp */,
-				4C42986B1F9B2D650080667C /* renderer_factory.cpp */,
+				4C4298691F9B2D650080667C /* renderer.cpp */,
 				4C42986C1F9B2D650080667C /* renderer_factory.hpp */,
-				4C42986D1F9B2D650080667C /* render_group.cpp */,
+				4C42986B1F9B2D650080667C /* renderer_factory.cpp */,
 				4C42986E1F9B2D650080667C /* render_group.hpp */,
-				4C42986F1F9B2D650080667C /* pixel_layer.cpp */,
+				4C42986D1F9B2D650080667C /* render_group.cpp */,
 				4C4298701F9B2D650080667C /* pixel_layer.hpp */,
-				4C4298711F9B2D650080667C /* texture_loader.cpp */,
+				4C42986F1F9B2D650080667C /* pixel_layer.cpp */,
 				4C4298721F9B2D650080667C /* texture_loader.hpp */,
+				4C4298711F9B2D650080667C /* texture_loader.cpp */,
 			);
 			path = core_cpp;
 			sourceTree = "<group>";
@@ -354,8 +354,8 @@
 				4C42985C1F9B2D650080667C /* common.h */,
 				4C42985D1F9B2D650080667C /* renderer_types.h */,
 				4C42985E1F9B2D650080667C /* geometry.hpp */,
-				4C42985F1F9B2D650080667C /* gles_program.cpp */,
 				4C4298601F9B2D650080667C /* gles_program.hpp */,
+				4C42985F1F9B2D650080667C /* gles_program.cpp */,
 				4C4298611F9B2D650080667C /* log.h */,
 				4C4298621F9B2D650080667C /* pixel_layer_defines.h */,
 				4C4298631F9B2D650080667C /* shader_structs.h */,
@@ -366,10 +366,10 @@
 		4C4298641F9B2D650080667C /* custom_renderers */ = {
 			isa = PBXGroup;
 			children = (
-				4C4298651F9B2D650080667C /* red_renderer.cpp */,
 				4C4298661F9B2D650080667C /* red_renderer.hpp */,
-				4C4298671F9B2D650080667C /* test_renderer.cpp */,
+				4C4298651F9B2D650080667C /* red_renderer.cpp */,
 				4C4298681F9B2D650080667C /* test_renderer.hpp */,
+				4C4298671F9B2D650080667C /* test_renderer.cpp */,
 			);
 			path = custom_renderers;
 			sourceTree = "<group>";
@@ -506,7 +506,7 @@
 				4C7C135F1F977C450032628E /* C2BL1ViewController.mm in Sources */,
 				4C289E8B1F754DCE00E153B8 /* AppDelegate.m in Sources */,
 				4C7C136A1F9780EA0032628E /* VLDrawView.m in Sources */,
-				4C18B7561F990721005FC7E8 /* VLDisplayer.m in Sources */,
+				4C18B7561F990721005FC7E8 /* VLDisplayer.mm in Sources */,
 				4C42987E1F9B2DB20080667C /* red_renderer.cpp in Sources */,
 				4C42987B1F9B2D910080667C /* VLImageRenderGroup.mm in Sources */,
 				4C4298831F9B2DB20080667C /* pixel_layer.cpp in Sources */,

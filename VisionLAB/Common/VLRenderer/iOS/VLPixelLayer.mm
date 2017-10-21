@@ -20,6 +20,7 @@ using namespace VLImageRenderKit;
     CVOpenGLESTextureRef _contentTextureCache;
     UIImage *_contentImage;
     
+    GLuint _presetFramebuffer;
     GLuint _textureBufferID;
     BOOL _isReady;
 }
@@ -32,11 +33,12 @@ using namespace VLImageRenderKit;
 
 @implementation VLPixelLayer
 
-+ (instancetype)layerWithSize:(CGSize)size {
+
++ (instancetype)sourceLayerWithImage:(UIImage *)image {
     VLPixelLayer *layer = [VLPixelLayer new];
-    layer.contentSize = size;
-    layer.layerType = VLPixelLayerTypePixelBuffer;
-    layer.frame = CGRectMake(0, 0, size.width, size.height);
+    [layer setContentImage:image];
+    layer.layerType = VLPixelLayerTypeOpenGLTexture;
+    layer.frame = CGRectMake(0, 0, layer.contentSize.width, layer.contentSize.height);
     layer.flipOptions = VLPixelLayerFlipVertical;
     return layer;
 }
@@ -52,12 +54,20 @@ using namespace VLImageRenderKit;
 }
 
 
-+ (instancetype)layerWithImage:(UIImage *)image {
++ (instancetype)destinationLayerWithSize:(CGSize)size {
     VLPixelLayer *layer = [VLPixelLayer new];
-    [layer setContentImage:image];
-    layer.layerType = VLPixelLayerTypeOpenGLTexture;
-    layer.frame = CGRectMake(0, 0, layer.contentSize.width, layer.contentSize.height);
+    layer.contentSize = size;
+    layer.layerType = VLPixelLayerTypePixelBuffer;
+    layer.frame = CGRectMake(0, 0, size.width, size.height);
     layer.flipOptions = VLPixelLayerFlipVertical;
+    return layer;
+}
+
+
++ (instancetype)destinationLayerWithFramebuffer:(GLuint)framebuffer {
+    VLPixelLayer *layer = [VLPixelLayer new];
+    layer.layerType = VLPixelLayerTypeFramebuffer;
+    [layer setPresetFramebuffer:framebuffer];
     return layer;
 }
 
@@ -114,6 +124,10 @@ using namespace VLImageRenderKit;
                               contentImage.size.height * contentImage.scale);
 }
 
+- (void)setPresetFramebuffer:(GLuint)framebuffer {
+    _presetFramebuffer = framebuffer;
+}
+
 - (void)setFlipOptions:(VLPixelLayerFlipOptions)flipOptions {
     _flipOptions = flipOptions;
     _layer->setFlipOpetions((PixelLayerFlipOptions)flipOptions);
@@ -166,13 +180,21 @@ using namespace VLImageRenderKit;
     // setup buffer
     if (_layerType == VLPixelLayerTypePixelBuffer) {
         _isReady = [self setupPixelBuffer:_contentPixelBuffer withCache:textureCache];
+        if (_isReady) {
+            _layer->setTexture(_textureBufferID, GRSizeMake(_contentSize.width, _contentSize.height));
+        }
         
     } else if (_layerType == VLPixelLayerTypeOpenGLTexture) {
         _isReady = [self setupOpenGLTextureWithImage:_contentImage];
-    }
-    
-    if (_isReady) {
-        _layer->setTexture(_textureBufferID, GRSizeMake(_contentSize.width, _contentSize.height));
+        if (_isReady) {
+            _layer->setTexture(_textureBufferID, GRSizeMake(_contentSize.width, _contentSize.height));
+        }
+        
+    } else if (_layerType == VLPixelLayerTypeFramebuffer) {
+        _isReady = (_presetFramebuffer != 0);
+        if (_isReady) {
+            _layer->setPresetFramebuffer(_presetFramebuffer);
+        }
     }
     
     return _isReady;
