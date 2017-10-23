@@ -17,8 +17,8 @@
 @interface VLDisplayer ()<GLKViewDelegate> {
     EAGLContext *_context;
     GLKView *_glView;
-    CGSize _canvasSize;
     
+    CGSize _lastRenderSize;
     VLImageRenderer *_renderer;
     VLPixelLayer *_frameLayer;  // source
     VLPixelLayer *_canvasLayer; // destination
@@ -50,7 +50,7 @@
     [EAGLContext setCurrentContext:_context];
     
     // setup GLKView
-    CGRect frame = CGRectMake(0, 0, 512, 512);
+    CGRect frame = CGRectMake(0, 0, 128, 128);
     _glView = [[GLKView alloc] initWithFrame:frame context:_context];
     _glView.delegate = self;
     
@@ -60,10 +60,6 @@
     glGetIntegerv(GL_FRAMEBUFFER_BINDING, (GLint *)&currentFramebuffer);
     NSLog(@"Get GLKView framebuffer: %d", currentFramebuffer);
     _canvasLayer = [VLPixelLayer destinationLayerWithFramebuffer:currentFramebuffer];
-    
-    // create VLImageRenderer
-    _renderer = [[VLImageRenderer alloc] initWithSize:frame.size];
-    [_renderer setSharedContext:_context];
     
     [EAGLContext setCurrentContext:lastContext];
     return YES;
@@ -100,6 +96,25 @@
     if (!_frameLayer) {
         return;
     }
+    
+    GLint renderWidth;
+    GLint renderHeight;
+    glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_WIDTH, &renderWidth);
+    glGetRenderbufferParameteriv(GL_RENDERBUFFER, GL_RENDERBUFFER_HEIGHT, &renderHeight);
+    
+    if (!_renderer ||
+        _lastRenderSize.width != renderWidth ||
+        _lastRenderSize.height != renderHeight ) {
+        // change renderer
+        NSLog(@"Setup renderer %dx%d", renderWidth, renderHeight);
+        _lastRenderSize = CGSizeMake(renderWidth, renderHeight);
+        _renderer = [[VLImageRenderer alloc] initWithSize:_lastRenderSize];
+        [_renderer setSharedContext:_context];
+    }
+    
+    _frameLayer.frame = CGRectMake(0, 0, renderWidth, renderHeight);
+    _frameLayer.rotation = VLPixelLayerRotation270;
+    _frameLayer.contentMode=  VLPixelLayerContentScaleAspectFill;
     [_renderer renderLayer:_frameLayer toLayer:_canvasLayer];
 }
 
