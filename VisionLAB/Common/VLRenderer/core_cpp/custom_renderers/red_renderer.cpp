@@ -42,6 +42,10 @@ const char *RedRenderer::fragmentShaderString() {
          lowp vec4 originalColor = texture2D(inputImageTexture, textureCoordinate);
          // calculate red
          lowp vec3 hsvColor = rgb2hsv(originalColor.rgb);
+         if (hsvColor.z == 1.0) {
+             gl_FragColor = originalColor;
+             return;
+         }
          if (hsvColor.x < 0.2) {
              hsvColor.y = hsvColor.y * (0.2 - hsvColor.x) / 0.2;
              

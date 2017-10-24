@@ -11,7 +11,6 @@
 #import <OpenGLES/ES2/glext.h>
 
 #import "VLDisplayer.h"
-#import "VLImageRenderer.h"
 #import "VLImageRenderer_Private.h"
 
 @interface VLDisplayer ()<GLKViewDelegate> {
@@ -85,6 +84,10 @@
     return _glView;
 }
 
+- (EAGLContext *)context {
+    return _context;
+}
+
 
 - (void)updateWithPixelBuffer:(CVPixelBufferRef)pixelBuffer {
     _frameLayer = [VLPixelLayer layerWithPixelBuffer:pixelBuffer];
@@ -108,7 +111,13 @@
         // change renderer
         NSLog(@"Setup renderer %dx%d", renderWidth, renderHeight);
         _lastRenderSize = CGSizeMake(renderWidth, renderHeight);
-        _renderer = [[VLImageRenderer alloc] initWithSize:_lastRenderSize];
+        if ([self.delegete respondsToSelector:@selector(customImageRendererWithSize:)]) {
+            _renderer = [self.delegete customImageRendererWithSize:_lastRenderSize];
+        }
+        if (!_renderer) {
+            // use default renderer
+            _renderer = [[VLImageRenderer alloc] initWithSize:_lastRenderSize];
+        }
         [_renderer setSharedContext:_context];
     }
     

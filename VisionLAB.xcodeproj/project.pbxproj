@@ -10,7 +10,7 @@
 		4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B74D1F990525005FC7E8 /* VLCamera.m */; };
 		4C18B7501F99056F005FC7E8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C18B74F1F99056F005FC7E8 /* GLKit.framework */; };
 		4C18B7561F990721005FC7E8 /* VLDisplayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7551F990721005FC7E8 /* VLDisplayer.mm */; };
-		4C18B75A1F990B33005FC7E8 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7581F990B33005FC7E8 /* CameraViewController.m */; };
+		4C18B75A1F990B33005FC7E8 /* CameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7581F990B33005FC7E8 /* CameraViewController.mm */; };
 		4C18B75B1F990B33005FC7E8 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C18B7591F990B33005FC7E8 /* CameraViewController.xib */; };
 		4C289E881F754DCE00E153B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C289E871F754DCE00E153B8 /* main.m */; };
 		4C289E8B1F754DCE00E153B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C289E8A1F754DCE00E153B8 /* AppDelegate.m */; };
@@ -65,7 +65,7 @@
 		4C18B7541F990721005FC7E8 /* VLDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLDisplayer.h; sourceTree = "<group>"; };
 		4C18B7551F990721005FC7E8 /* VLDisplayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLDisplayer.mm; sourceTree = "<group>"; };
 		4C18B7571F990B33005FC7E8 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
-		4C18B7581F990B33005FC7E8 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		4C18B7581F990B33005FC7E8 /* CameraViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraViewController.mm; sourceTree = "<group>"; };
 		4C18B7591F990B33005FC7E8 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		4C289E831F754DCE00E153B8 /* VisionLAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionLAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C289E871F754DCE00E153B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -264,7 +264,7 @@
 				4C2A13DD1F9249D500C1D4B2 /* EdgeDetectionViewController.mm */,
 				4C2A13D61F9245D100C1D4B2 /* EdgeDetectionViewController.xib */,
 				4C18B7571F990B33005FC7E8 /* CameraViewController.h */,
-				4C18B7581F990B33005FC7E8 /* CameraViewController.m */,
+				4C18B7581F990B33005FC7E8 /* CameraViewController.mm */,
 				4C18B7591F990B33005FC7E8 /* CameraViewController.xib */,
 				4C42981D1F9B268E0080667C /* RendererViewController.h */,
 				4C42981E1F9B268E0080667C /* RendererViewController.mm */,
@@ -514,7 +514,7 @@
 				4C7C13741F978A950032628E /* VLCircle.m in Sources */,
 				4C4298821F9B2DB20080667C /* render_group.cpp in Sources */,
 				4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */,
-				4C18B75A1F990B33005FC7E8 /* CameraViewController.m in Sources */,
+				4C18B75A1F990B33005FC7E8 /* CameraViewController.mm in Sources */,
 				4C42987A1F9B2D910080667C /* VLImageRenderer.mm in Sources */,
 				4C42987C1F9B2D910080667C /* VLPixelLayer.mm in Sources */,
 				4C42981F1F9B268E0080667C /* RendererViewController.mm in Sources */,

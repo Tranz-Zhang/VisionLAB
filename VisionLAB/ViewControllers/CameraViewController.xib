@@ -23,9 +23,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="c23-Cf-ddf">
-                    <rect key="frame" x="37" y="104" width="300" height="300"/>
+                    <rect key="frame" x="9.5" y="104" width="355" height="355"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="300" id="Byy-32-Ms8"/>
                         <constraint firstAttribute="width" secondItem="c23-Cf-ddf" secondAttribute="height" multiplier="1:1" id="pn2-Oj-wPn"/>
                     </constraints>
                 </imageView>
@@ -50,10 +49,11 @@
                 <constraint firstItem="c23-Cf-ddf" firstAttribute="top" secondItem="Zqg-KN-yEb" secondAttribute="top" constant="104" id="3di-V1-ieV"/>
                 <constraint firstItem="c23-Cf-ddf" firstAttribute="centerX" secondItem="Zqg-KN-yEb" secondAttribute="centerX" id="Avx-uP-eyW"/>
                 <constraint firstAttribute="bottom" secondItem="aqm-q8-j5n" secondAttribute="bottom" constant="40" id="Sbo-xX-yhK"/>
+                <constraint firstItem="c23-Cf-ddf" firstAttribute="width" secondItem="Zqg-KN-yEb" secondAttribute="width" constant="-20" id="ayd-xM-cII"/>
                 <constraint firstItem="aqm-q8-j5n" firstAttribute="centerX" secondItem="Zqg-KN-yEb" secondAttribute="centerX" id="tiH-p2-Hr4"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-            <point key="canvasLocation" x="33.5" y="54.5"/>
+            <point key="canvasLocation" x="-51" y="48"/>
         </view>
     </objects>
     <resources>

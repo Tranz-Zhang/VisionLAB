@@ -11,7 +11,7 @@
 #import "VLCamera.h"
 #import "VLDisplayer.h"
 
-@interface CameraViewController () <VLCameraProtocol> {
+@interface CameraViewController () <VLCameraDelegate, VLDisplayerDelegate> {
     VLCamera *_camera;
     VLDisplayer *_displayer;
 }
@@ -24,13 +24,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _camera = [VLCamera new];
+    _camera = [VLCamera cameraWithType:VLCameraTypeBack];
     _camera.delegate = self;
     [VLCamera checkPermission:^(BOOL granted) {
         NSLog(@"Check camera permission: %@", granted ? @"OK" : @"Failed");
     }];
     _displayer = [VLDisplayer new];
+    _displayer.delegete = self;
     
+    UIImage *icon = [UIImage imageNamed:@"camera_icon"];
+    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithImage:icon style:UIBarButtonItemStyleDone target:self action:@selector(onSwitchCamera)];
+    self.navigationItem.rightBarButtonItem = rightBarButton;
 }
 
 
@@ -38,6 +42,7 @@
     if (!_displayer.view.superview) {
         _displayer.view.frame = self.displayView.frame;
         [self.view addSubview:_displayer.view];
+        self.displayView.hidden = YES;
     }
     
     if (_camera.isCapturing) {
@@ -51,12 +56,33 @@
 }
 
 
-#pragma mark - VLCameraProtocol
+- (IBAction)onSwitchChange:(UISwitch *)switcher {
+    [_camera switchCameraType:switcher.on ? VLCameraTypeBack : VLCameraTypeFront];
+}
+
+- (void)onSwitchCamera {
+    if (_camera.cameraType == VLCameraTypeBack) {
+        [_camera switchCameraType:VLCameraTypeFront];
+        
+    } else {
+        [_camera switchCameraType:VLCameraTypeBack];
+    }
+}
+
+
+#pragma mark - VLCameraDelegate
 - (void)camera:(VLCamera *)camera didOutputPixelBuffer:(CVPixelBufferRef)pixelBuffer {
     if (_displayer) {
         [_displayer updateWithPixelBuffer:pixelBuffer];
     }
 }
+
+
+#pragma mark - VLDisplayerDelegate
+- (VLImageRenderer *)customImageRendererWithSize:(CGSize)renderSize {
+    return [[VLImageRenderer alloc] initWithSize:renderSize type:VLImageRenderKit::RendererTypeRed];
+}
+
 
 
 @end

@@ -20,6 +20,7 @@
     [UINavigationBar appearance].tintColor = [UIColor colorWithWhite:0.5 alpha:1];
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor colorWithWhite:0.9 alpha:1]};
     [UINavigationBar appearance].barTintColor = [UIColor blackColor];
+    [UIBarButtonItem appearance].tintColor = [UIColor lightGrayColor];
     
     return YES;
 }
