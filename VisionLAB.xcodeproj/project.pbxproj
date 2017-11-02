@@ -56,6 +56,10 @@
 		4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */; };
 		4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE11F9507C100697A47 /* house_1024.jpg */; };
 		4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */; };
+		4CC278B11FAB446100A08782 /* C2AL2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278AF1FAB446100A08782 /* C2AL2ViewController.m */; };
+		4CC278B21FAB446100A08782 /* C2AL2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */; };
+		4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B31FAB4EE500A08782 /* avatar_100.png */; };
+		4CC278BE1FAB58E200A08782 /* image_mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278BC1FAB58E200A08782 /* image_mat.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +152,12 @@
 		4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toy_2048.jpg; sourceTree = "<group>"; };
 		4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inhouse_512.jpg; sourceTree = "<group>"; };
 		4C8D0BE11F9507C100697A47 /* house_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house_1024.jpg; sourceTree = "<group>"; };
+		4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL2ViewController.h; sourceTree = "<group>"; };
+		4CC278AF1FAB446100A08782 /* C2AL2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C2AL2ViewController.m; sourceTree = "<group>"; };
+		4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = C2AL2ViewController.xib; sourceTree = "<group>"; };
+		4CC278B31FAB4EE500A08782 /* avatar_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_100.png; sourceTree = "<group>"; };
+		4CC278BC1FAB58E200A08782 /* image_mat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = image_mat.cpp; sourceTree = "<group>"; };
+		4CC278BD1FAB58E200A08782 /* image_mat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = image_mat.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +243,9 @@
 				4C3DF2F81F966DAE007F6986 /* C2AL1ViewController.h */,
 				4C3DF2F91F966DAE007F6986 /* C2AL1ViewController.mm */,
 				4C3DF2FA1F966DAE007F6986 /* C2AL1ViewController.xib */,
+				4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */,
+				4CC278AF1FAB446100A08782 /* C2AL2ViewController.m */,
+				4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */,
 				4C7C135C1F977C450032628E /* C2BL1ViewController.h */,
 				4C7C135D1F977C450032628E /* C2BL1ViewController.mm */,
 				4C7C135E1F977C450032628E /* C2BL1ViewController.xib */,
@@ -243,7 +256,7 @@
 		4C3E71991F78FB7B003F5AE2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				4C4297F11F9B260E0080667C /* VLRenderer */,
+				4C4297F11F9B260E0080667C /* VLImageKit */,
 				4C18B74B1F9901D6005FC7E8 /* VLVideo */,
 				4C7C13611F97805D0032628E /* VLDrawTool */,
 				4C2A13D91F9246B300C1D4B2 /* LabUtils.h */,
@@ -285,6 +298,7 @@
 		4C3E71B11F7937BE003F5AE2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4CC278B31FAB4EE500A08782 /* avatar_100.png */,
 				4C7C13771F9797D20032628E /* hough_line_test.png */,
 				4C7C13751F9793350032628E /* simple_shapes_512.png */,
 				4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */,
@@ -296,14 +310,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		4C4297F11F9B260E0080667C /* VLRenderer */ = {
+		4C4297F11F9B260E0080667C /* VLImageKit */ = {
 			isa = PBXGroup;
 			children = (
 				4C4298731F9B2D890080667C /* OpenGLTool */,
 				4C4298501F9B2D650080667C /* iOS */,
-				4C42985A1F9B2D650080667C /* core_cpp */,
+				4C42985A1F9B2D650080667C /* Renderer */,
+				4CC278BB1FAB586900A08782 /* AnalyzationTools */,
 			);
-			path = VLRenderer;
+			path = VLImageKit;
 			sourceTree = "<group>";
 		};
 		4C4298501F9B2D650080667C /* iOS */ = {
@@ -329,7 +344,7 @@
 			path = Privates;
 			sourceTree = "<group>";
 		};
-		4C42985A1F9B2D650080667C /* core_cpp */ = {
+		4C42985A1F9B2D650080667C /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
 				4C42985B1F9B2D650080667C /* common */,
@@ -345,7 +360,7 @@
 				4C4298721F9B2D650080667C /* texture_loader.hpp */,
 				4C4298711F9B2D650080667C /* texture_loader.cpp */,
 			);
-			path = core_cpp;
+			path = Renderer;
 			sourceTree = "<group>";
 		};
 		4C42985B1F9B2D650080667C /* common */ = {
@@ -408,6 +423,15 @@
 				4C7C13731F978A950032628E /* VLCircle.m */,
 			);
 			path = DrawObjects;
+			sourceTree = "<group>";
+		};
+		4CC278BB1FAB586900A08782 /* AnalyzationTools */ = {
+			isa = PBXGroup;
+			children = (
+				4CC278BD1FAB58E200A08782 /* image_mat.hpp */,
+				4CC278BC1FAB58E200A08782 /* image_mat.cpp */,
+			);
+			path = AnalyzationTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +508,8 @@
 				4C7C13781F9797D80032628E /* hough_line_test.png in Resources */,
 				4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */,
 				4C3DF2FC1F966DAE007F6986 /* C2AL1ViewController.xib in Resources */,
+				4CC278B21FAB446100A08782 /* C2AL2ViewController.xib in Resources */,
+				4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */,
 				4C289E911F754DCE00E153B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +524,7 @@
 				4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */,
 				4C2A13DE1F9249D500C1D4B2 /* EdgeDetectionViewController.mm in Sources */,
 				4C4298791F9B2D8C0080667C /* VLTextureCache.m in Sources */,
+				4CC278B11FAB446100A08782 /* C2AL2ViewController.m in Sources */,
 				4C7C13671F9780C20032628E /* VLDrawObject.m in Sources */,
 				4C4298811F9B2DB20080667C /* renderer_factory.cpp in Sources */,
 				4C4298781F9B2D8C0080667C /* VLGLProgram.m in Sources */,
@@ -517,6 +544,7 @@
 				4C18B75A1F990B33005FC7E8 /* CameraViewController.mm in Sources */,
 				4C42987A1F9B2D910080667C /* VLImageRenderer.mm in Sources */,
 				4C42987C1F9B2D910080667C /* VLPixelLayer.mm in Sources */,
+				4CC278BE1FAB58E200A08782 /* image_mat.cpp in Sources */,
 				4C42981F1F9B268E0080667C /* RendererViewController.mm in Sources */,
 				4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */,
 				4C4298841F9B2DB20080667C /* texture_loader.cpp in Sources */,

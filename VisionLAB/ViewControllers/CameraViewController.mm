@@ -80,7 +80,7 @@
 
 #pragma mark - VLDisplayerDelegate
 - (VLImageRenderer *)customImageRendererWithSize:(CGSize)renderSize {
-    return [[VLImageRenderer alloc] initWithSize:renderSize type:VLImageRenderKit::RendererTypeRed];
+    return [[VLImageRenderer alloc] initWithSize:renderSize type:VLImageKit::RendererTypeRed];
 }
 
 

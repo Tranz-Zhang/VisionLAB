@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="C2AL2ViewController">
+            <connections>
+                <outlet property="infoLabel" destination="2NH-Ou-Rl7" id="taV-mv-piz"/>
+                <outlet property="resultView" destination="6Fe-Oz-qzt" id="qVh-Hb-JFJ"/>
+                <outlet property="view" destination="z8s-cS-AsF" id="oZY-dX-EKE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="z8s-cS-AsF">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="6Fe-Oz-qzt">
+                    <rect key="frame" x="37" y="100" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6Fe-Oz-qzt" secondAttribute="height" multiplier="1:1" id="FHR-4t-3fy"/>
+                        <constraint firstAttribute="width" constant="300" id="TEZ-41-MQr"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fev-A0-Bfb" customClass="VLButton">
+                    <rect key="frame" x="37" y="577" width="300" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="QeQ-8u-Phu"/>
+                        <constraint firstAttribute="width" constant="300" id="bmL-Pq-Z3h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                    <state key="normal" title="Average Filter">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onTestAverageFilter:" destination="-1" eventType="touchUpInside" id="XgC-Yi-cBG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NH-Ou-Rl7">
+                    <rect key="frame" x="183" y="408" width="8.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2NH-Ou-Rl7" firstAttribute="centerX" secondItem="6Fe-Oz-qzt" secondAttribute="centerX" id="1ON-Pf-Qv9"/>
+                <constraint firstItem="6Fe-Oz-qzt" firstAttribute="top" secondItem="z8s-cS-AsF" secondAttribute="top" constant="100" id="3lI-wQ-NnV"/>
+                <constraint firstItem="fev-A0-Bfb" firstAttribute="centerX" secondItem="z8s-cS-AsF" secondAttribute="centerX" id="6XP-Ow-Szh"/>
+                <constraint firstItem="6Fe-Oz-qzt" firstAttribute="width" secondItem="6Fe-Oz-qzt" secondAttribute="height" multiplier="1:1" id="Eqd-4b-K41"/>
+                <constraint firstAttribute="bottom" secondItem="fev-A0-Bfb" secondAttribute="bottom" constant="40" id="Uxa-sL-V7j"/>
+                <constraint firstItem="6Fe-Oz-qzt" firstAttribute="centerX" secondItem="z8s-cS-AsF" secondAttribute="centerX" id="uh1-rB-YSf"/>
+                <constraint firstItem="2NH-Ou-Rl7" firstAttribute="top" secondItem="6Fe-Oz-qzt" secondAttribute="bottom" constant="8" id="yhG-Ef-vMH"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
+</document>

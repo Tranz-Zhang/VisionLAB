@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     CGSize renderSize = CGSizeMake(512, 512);
-    _renderer = [[VLImageRenderer alloc] initWithSize:renderSize type:VLImageRenderKit::RendererTypeDefault];
+    _renderer = [[VLImageRenderer alloc] initWithSize:renderSize type:VLImageKit::RendererTypeDefault];
     _displayer = [VLDisplayer new];
 }
 
