@@ -145,7 +145,7 @@ using namespace VLImageKit;
 
 - (void)setFrame:(CGRect)frame {
     _frame = frame;
-    _layer->setFrame(GRRectMake(frame.origin.x,
+    _layer->setFrame(VLRectMake(frame.origin.x,
                                 frame.origin.y,
                                 frame.size.width,
                                 frame.size.height));
@@ -181,13 +181,13 @@ using namespace VLImageKit;
     if (_layerType == VLPixelLayerTypePixelBuffer) {
         _isReady = [self setupPixelBuffer:_contentPixelBuffer withCache:textureCache];
         if (_isReady) {
-            _layer->setTexture(_textureBufferID, GRSizeMake(_contentSize.width, _contentSize.height));
+            _layer->setTexture(_textureBufferID, VLSizeMake(_contentSize.width, _contentSize.height));
         }
         
     } else if (_layerType == VLPixelLayerTypeOpenGLTexture) {
         _isReady = [self setupOpenGLTextureWithImage:_contentImage];
         if (_isReady) {
-            _layer->setTexture(_textureBufferID, GRSizeMake(_contentSize.width, _contentSize.height));
+            _layer->setTexture(_textureBufferID, VLSizeMake(_contentSize.width, _contentSize.height));
         }
         
     } else if (_layerType == VLPixelLayerTypeFramebuffer) {

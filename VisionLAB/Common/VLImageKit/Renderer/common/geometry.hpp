@@ -40,17 +40,17 @@ namespace VLImageKit {
     
     /* Constructions */
     static inline VLPoint
-    GRPointMake(float x, float y) {
+    VLPointMake(float x, float y) {
         VLPoint p; p.x = x; p.y = y; return p;
     }
     
     static inline VLSize
-    GRSizeMake(float width, float height) {
+    VLSizeMake(float width, float height) {
         VLSize size; size.width = width; size.height = height; return size;
     }
     
     static inline VLRect
-    GRRectMake(float x, float y, float width, float height) {
+    VLRectMake(float x, float y, float width, float height) {
         VLRect rect;
         rect.origin.x = x; rect.origin.y = y;
         rect.size.width = width; rect.size.height = height;

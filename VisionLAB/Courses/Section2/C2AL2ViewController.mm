@@ -8,6 +8,9 @@
 
 #import "C2AL2ViewController.h"
 #import "LabUtils.h"
+#import "VLImageMatTools.h"
+
+using namespace VLImageKit;
 
 @interface C2AL2ViewController ()
 
@@ -25,33 +28,23 @@
 
 - (IBAction)onTestAverageFilter:(UIButton *)sender {
     UIImage *sourceImage = [UIImage imageNamed:@"avatar_100.png"];
-    NSData *imageData = [LabUtils grayScaleDataWithImage:sourceImage];
     
-    CGSize size = sourceImage.size;
-    Byte *rawData = (Byte *)imageData.bytes;
+    GrayImageMat *grayMat = CreateGrayImageMatWithUIImage(sourceImage);
+    
+    VLSize size = grayMat->size();
     for (int row = 0; row < size.height; row++) {
         for (int col = 0; col < size.width; col++) {
-//            int value = rawData[(int)(col + row * size.width)];
-//
-//            rawData[(int)(col + row * size.width)] = [self averageColorValueAtLocation:CGPointMake(col, row) withRawData:rawData];
-//            printf("%d ", value);
+            if (row == 50) {
+                grayMat->setValue(0, VLPointMake(col, row)); // draw a black line
+            }
         }
-//        printf("\n");
     }
     
     // show image
-    UIImage *grayImage = [LabUtils grayScaleImageWithData:imageData size:sourceImage.size];;
+    UIImage *grayImage = UIImageWithGrayImageMat(grayMat);
     self.resultView.contentMode = UIViewContentModeCenter;
     self.resultView.image = grayImage;
 }
-
-
-//- (Byte)averageColorValueAtLocation:(CGPoint)location
-//                        withRawData:(Byte *)rawData {
-//
-//
-//    return 0;
-//}
 
 
 @end

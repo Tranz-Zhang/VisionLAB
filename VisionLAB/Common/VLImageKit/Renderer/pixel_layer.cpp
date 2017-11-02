@@ -128,7 +128,7 @@ GLfloat * PixelLayer::textureCoordinates() {
         VLSize outputSize;
         if (_rotation == PixelLayerRotation90 ||
             _rotation == PixelLayerRotation270) {
-            outputSize = GRSizeMake(_frame.size.height, _frame.size.height);
+            outputSize = VLSizeMake(_frame.size.height, _frame.size.height);
             
         } else {
             outputSize = _frame.size;

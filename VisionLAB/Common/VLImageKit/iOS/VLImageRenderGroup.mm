@@ -30,7 +30,7 @@ using namespace std;
     self = [super init];
     if (self) {
         _outputSize = outputSize;
-        _renderGroup = new RenderGroup(GRSizeMake(outputSize.width, outputSize.height));
+        _renderGroup = new RenderGroup(VLSizeMake(outputSize.width, outputSize.height));
     }
     return self;
 }

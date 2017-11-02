@@ -200,7 +200,7 @@ bool Renderer::renderLayer(PixelLayer *sourceLayer, PixelLayer *destinationLayer
     // draw layer
     drawLayer(sourceLayer);
     glFlush();
-    destinationLayer->setFrame(GRRectMake(0, 0, _outputSize.width, _outputSize.height));
+    destinationLayer->setFrame(VLRectMake(0, 0, _outputSize.width, _outputSize.height));
     
     return true;
 }

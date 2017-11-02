@@ -77,7 +77,7 @@ int GRImageRenderer_TextureLoader(const char *textureName) {
     self = [super init];
     if (self) {
         _outputSize = outputSize;
-        _renderer = RendererFactory::CreateRenderer(type, GRSizeMake(outputSize.width, outputSize.height));
+        _renderer = RendererFactory::CreateRenderer(type, VLSizeMake(outputSize.width, outputSize.height));
         _renderer->setTextureLoader(GRImageRenderer_TextureLoader);
     }
     return self;
