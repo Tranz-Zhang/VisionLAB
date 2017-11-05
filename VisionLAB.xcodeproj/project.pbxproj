@@ -56,6 +56,10 @@
 		4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */; };
 		4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE11F9507C100697A47 /* house_1024.jpg */; };
 		4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */; };
+		4CAFDA041FAF3C9B00249B84 /* guassian_mask1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA031FAF3C9900249B84 /* guassian_mask1.png */; };
+		4CAFDA061FAF4DD200249B84 /* guassian_mask2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */; };
+		4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA091FAF51F000249B84 /* guassian_mask3.png */; };
+		4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA081FAF51F000249B84 /* guassian_mask4.png */; };
 		4CC278B11FAB446100A08782 /* C2AL2ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */; };
 		4CC278B21FAB446100A08782 /* C2AL2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */; };
 		4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B31FAB4EE500A08782 /* avatar_100.png */; };
@@ -153,6 +157,10 @@
 		4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toy_2048.jpg; sourceTree = "<group>"; };
 		4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inhouse_512.jpg; sourceTree = "<group>"; };
 		4C8D0BE11F9507C100697A47 /* house_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house_1024.jpg; sourceTree = "<group>"; };
+		4CAFDA031FAF3C9900249B84 /* guassian_mask1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask1.png; sourceTree = "<group>"; };
+		4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask2.png; sourceTree = "<group>"; };
+		4CAFDA081FAF51F000249B84 /* guassian_mask4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask4.png; sourceTree = "<group>"; };
+		4CAFDA091FAF51F000249B84 /* guassian_mask3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask3.png; sourceTree = "<group>"; };
 		4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL2ViewController.h; sourceTree = "<group>"; };
 		4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = C2AL2ViewController.mm; sourceTree = "<group>"; };
 		4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = C2AL2ViewController.xib; sourceTree = "<group>"; };
@@ -301,6 +309,10 @@
 		4C3E71B11F7937BE003F5AE2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4CAFDA031FAF3C9900249B84 /* guassian_mask1.png */,
+				4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */,
+				4CAFDA091FAF51F000249B84 /* guassian_mask3.png */,
+				4CAFDA081FAF51F000249B84 /* guassian_mask4.png */,
 				4CC278B31FAB4EE500A08782 /* avatar_100.png */,
 				4C7C13771F9797D20032628E /* hough_line_test.png */,
 				4C7C13751F9793350032628E /* simple_shapes_512.png */,
@@ -503,6 +515,7 @@
 				4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */,
 				4C7C13761F97935E0032628E /* simple_shapes_512.png in Resources */,
 				4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */,
+				4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */,
 				4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */,
 				4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */,
 				4C3E71B51F7937ED003F5AE2 /* sunset_256.png in Resources */,
@@ -511,10 +524,13 @@
 				4C18B75B1F990B33005FC7E8 /* CameraViewController.xib in Resources */,
 				4C289E961F754DCE00E153B8 /* LaunchScreen.storyboard in Resources */,
 				4C7C13781F9797D80032628E /* hough_line_test.png in Resources */,
+				4CAFDA061FAF4DD200249B84 /* guassian_mask2.png in Resources */,
 				4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */,
 				4C3DF2FC1F966DAE007F6986 /* C2AL1ViewController.xib in Resources */,
+				4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */,
 				4CC278B21FAB446100A08782 /* C2AL2ViewController.xib in Resources */,
 				4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */,
+				4CAFDA041FAF3C9B00249B84 /* guassian_mask1.png in Resources */,
 				4C289E911F754DCE00E153B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

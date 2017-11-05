@@ -31,8 +31,8 @@ public:
     VLSize size() { return _size; }
     
     // pixel operation
-    uint8_t getValue(VLPoint location);
-    void setValue(uint8_t value, VLPoint location);
+    uint8_t getValue(int x, int y);
+    void setValue(uint8_t value, int x, int y);
 };
 
 }

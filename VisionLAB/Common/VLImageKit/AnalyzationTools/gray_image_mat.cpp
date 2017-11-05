@@ -27,12 +27,12 @@ GrayImageMat::~GrayImageMat() {
 }
 
 
-uint8_t GrayImageMat::getValue(VLPoint location) {
-    return _rawData[int(location.x + location.y * _size.width)];
+uint8_t GrayImageMat::getValue(int x, int y) {
+    return _rawData[int(x + y * _size.width)];
 }
 
 
-void GrayImageMat::setValue(uint8_t value, VLPoint location) {
-    _rawData[int(location.x + location.y * _size.width)] = value;
+void GrayImageMat::setValue(uint8_t value, int x, int y) {
+    _rawData[int(x + y * _size.width)] = value;
 }
 
