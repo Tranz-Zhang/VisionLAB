@@ -65,6 +65,9 @@
 		4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B31FAB4EE500A08782 /* avatar_100.png */; };
 		4CC278C11FAB5A7400A08782 /* gray_image_mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278BF1FAB5A7400A08782 /* gray_image_mat.cpp */; };
 		4CC278C41FAB5F5100A08782 /* VLImageMatTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278C31FAB5F5100A08782 /* VLImageMatTools.mm */; };
+		4CD72EEA1FB0C01E0099DD9F /* guassian_mask5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD72EE91FB0C01E0099DD9F /* guassian_mask5.png */; };
+		4CD72EED1FB0C1200099DD9F /* C2AL3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD72EEC1FB0C1200099DD9F /* C2AL3ViewController.m */; };
+		4CD72EEF1FB0C14D0099DD9F /* C2A.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD72EEE1FB0C14D0099DD9F /* C2A.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -169,6 +172,10 @@
 		4CC278C01FAB5A7400A08782 /* gray_image_mat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gray_image_mat.hpp; sourceTree = "<group>"; };
 		4CC278C21FAB5F5100A08782 /* VLImageMatTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLImageMatTools.h; sourceTree = "<group>"; };
 		4CC278C31FAB5F5100A08782 /* VLImageMatTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLImageMatTools.mm; sourceTree = "<group>"; };
+		4CD72EE91FB0C01E0099DD9F /* guassian_mask5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask5.png; sourceTree = "<group>"; };
+		4CD72EEB1FB0C1200099DD9F /* C2AL3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL3ViewController.h; sourceTree = "<group>"; };
+		4CD72EEC1FB0C1200099DD9F /* C2AL3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C2AL3ViewController.m; sourceTree = "<group>"; };
+		4CD72EEE1FB0C14D0099DD9F /* C2A.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = C2A.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +264,9 @@
 				4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */,
 				4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */,
 				4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */,
+				4CD72EEB1FB0C1200099DD9F /* C2AL3ViewController.h */,
+				4CD72EEC1FB0C1200099DD9F /* C2AL3ViewController.m */,
+				4CD72EEE1FB0C14D0099DD9F /* C2A.storyboard */,
 				4C7C135C1F977C450032628E /* C2BL1ViewController.h */,
 				4C7C135D1F977C450032628E /* C2BL1ViewController.mm */,
 				4C7C135E1F977C450032628E /* C2BL1ViewController.xib */,
@@ -313,6 +323,7 @@
 				4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */,
 				4CAFDA091FAF51F000249B84 /* guassian_mask3.png */,
 				4CAFDA081FAF51F000249B84 /* guassian_mask4.png */,
+				4CD72EE91FB0C01E0099DD9F /* guassian_mask5.png */,
 				4CC278B31FAB4EE500A08782 /* avatar_100.png */,
 				4C7C13771F9797D20032628E /* hough_line_test.png */,
 				4C7C13751F9793350032628E /* simple_shapes_512.png */,
@@ -518,6 +529,7 @@
 				4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */,
 				4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */,
 				4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */,
+				4CD72EEA1FB0C01E0099DD9F /* guassian_mask5.png in Resources */,
 				4C3E71B51F7937ED003F5AE2 /* sunset_256.png in Resources */,
 				4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */,
 				4C7C13601F977C450032628E /* C2BL1ViewController.xib in Resources */,
@@ -528,6 +540,7 @@
 				4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */,
 				4C3DF2FC1F966DAE007F6986 /* C2AL1ViewController.xib in Resources */,
 				4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */,
+				4CD72EEF1FB0C14D0099DD9F /* C2A.storyboard in Resources */,
 				4CC278B21FAB446100A08782 /* C2AL2ViewController.xib in Resources */,
 				4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */,
 				4CAFDA041FAF3C9B00249B84 /* guassian_mask1.png in Resources */,
@@ -550,6 +563,7 @@
 				4C7C13671F9780C20032628E /* VLDrawObject.m in Sources */,
 				4C4298811F9B2DB20080667C /* renderer_factory.cpp in Sources */,
 				4C4298781F9B2D8C0080667C /* VLGLProgram.m in Sources */,
+				4CD72EED1FB0C1200099DD9F /* C2AL3ViewController.m in Sources */,
 				4C42987F1F9B2DB20080667C /* test_renderer.cpp in Sources */,
 				4C7C136E1F9785420032628E /* VLLine.m in Sources */,
 				4C7C135F1F977C450032628E /* C2BL1ViewController.mm in Sources */,
