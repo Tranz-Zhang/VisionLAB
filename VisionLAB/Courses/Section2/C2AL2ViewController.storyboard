@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--C2AL2ViewController-->
+        <scene sceneID="mXq-AN-4By">
+            <objects>
+                <viewController storyboardIdentifier="C2AL2ViewController" id="q1z-jx-lk4" userLabel="C2AL2ViewController" customClass="C2AL2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pHg-mq-ppf"/>
+                        <viewControllerLayoutGuide type="bottom" id="qUA-yY-OZS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hgX-TX-VhE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hB-lB-3se" customClass="VLButton">
+                                <rect key="frame" x="37.5" y="581" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ng1-8H-aq9"/>
+                                    <constraint firstAttribute="width" constant="300" id="o1t-wj-2DC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Average Filter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestAverageFilter:" destination="q1z-jx-lk4" eventType="touchUpInside" id="Z8m-wQ-8op"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYA-tb-D3F">
+                                <rect key="frame" x="101.5" y="451" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tYA-tb-D3F" secondAttribute="height" multiplier="1:1" id="jHW-6M-PtI"/>
+                                    <constraint firstAttribute="width" constant="44" id="wbO-R8-hVZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="guassian_mask2.png"/>
+                                <connections>
+                                    <action selector="onUsingGaussianMask1:" destination="q1z-jx-lk4" eventType="touchUpInside" id="4Ua-9q-Ju6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1U-JC-Hfm">
+                                <rect key="frame" x="183" y="394" width="8.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8V-ME-zdP">
+                                <rect key="frame" x="37.5" y="451" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="eaP-KI-DxT"/>
+                                    <constraint firstAttribute="width" secondItem="P8V-ME-zdP" secondAttribute="height" multiplier="1:1" id="nYY-Df-8TV"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="guassian_mask1.png"/>
+                                <connections>
+                                    <action selector="onUsingGaussianMask1:" destination="q1z-jx-lk4" eventType="touchUpInside" id="vKp-Ir-w9W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6n0-kw-77f">
+                                <rect key="frame" x="293.5" y="451" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="7RI-ye-NCF"/>
+                                    <constraint firstAttribute="width" secondItem="6n0-kw-77f" secondAttribute="height" multiplier="1:1" id="Qgr-xf-YOe"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="guassian_mask5.png"/>
+                                <connections>
+                                    <action selector="onUsingGaussianMask1:" destination="q1z-jx-lk4" eventType="touchUpInside" id="8gc-cZ-c8j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCN-Gp-zAh">
+                                <rect key="frame" x="165.5" y="451" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="8aj-Me-Lgd"/>
+                                    <constraint firstAttribute="width" secondItem="wCN-Gp-zAh" secondAttribute="height" multiplier="1:1" id="veA-kI-4XN"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="guassian_mask3.png"/>
+                                <connections>
+                                    <action selector="onUsingGaussianMask1:" destination="q1z-jx-lk4" eventType="touchUpInside" id="CYR-Eg-N8j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCr-7N-SuW" customClass="VLButton">
+                                <rect key="frame" x="37.5" y="511" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CzX-wi-DOK"/>
+                                    <constraint firstAttribute="width" constant="300" id="l7q-HS-RHe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Gaussian Filter">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestGaussianBlurFilter:" destination="q1z-jx-lk4" eventType="touchUpInside" id="f5G-Zh-NCJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofh-K8-6a3">
+                                <rect key="frame" x="229.5" y="451" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ofh-K8-6a3" secondAttribute="height" multiplier="1:1" id="BWf-eT-Cuz"/>
+                                    <constraint firstAttribute="width" constant="44" id="DRh-yz-vQ6"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="guassian_mask4.png"/>
+                                <connections>
+                                    <action selector="onUsingGaussianMask1:" destination="q1z-jx-lk4" eventType="touchUpInside" id="pLU-F1-EFc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaussian Masks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpd-bz-zej">
+                                <rect key="frame" x="37.5" y="427" width="97.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-T5-oJg">
+                                <rect key="frame" x="37.5" y="84" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DLJ-T5-oJg" secondAttribute="height" multiplier="1:1" id="Isn-2B-U5k"/>
+                                    <constraint firstAttribute="width" constant="300" id="ws7-rf-zS4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3hB-lB-3se" firstAttribute="centerX" secondItem="hgX-TX-VhE" secondAttribute="centerX" id="0BZ-yM-ZxM"/>
+                            <constraint firstItem="6n0-kw-77f" firstAttribute="leading" secondItem="Ofh-K8-6a3" secondAttribute="trailing" constant="20" id="0bL-yR-bkf"/>
+                            <constraint firstItem="wCN-Gp-zAh" firstAttribute="leading" secondItem="tYA-tb-D3F" secondAttribute="trailing" constant="20" id="211-zV-qN1"/>
+                            <constraint firstItem="DLJ-T5-oJg" firstAttribute="width" secondItem="DLJ-T5-oJg" secondAttribute="height" multiplier="1:1" id="6Td-Es-Z4p"/>
+                            <constraint firstItem="Ofh-K8-6a3" firstAttribute="width" secondItem="Ofh-K8-6a3" secondAttribute="height" multiplier="1:1" id="77d-qm-Sbk"/>
+                            <constraint firstItem="wCN-Gp-zAh" firstAttribute="width" secondItem="wCN-Gp-zAh" secondAttribute="height" multiplier="1:1" id="9yl-Y1-0rT"/>
+                            <constraint firstItem="DLJ-T5-oJg" firstAttribute="width" secondItem="DLJ-T5-oJg" secondAttribute="height" multiplier="1:1" id="9ys-ox-dQH"/>
+                            <constraint firstItem="3hB-lB-3se" firstAttribute="top" secondItem="zCr-7N-SuW" secondAttribute="bottom" constant="20" id="ARh-UN-VZY"/>
+                            <constraint firstItem="P8V-ME-zdP" firstAttribute="top" secondItem="Jpd-bz-zej" secondAttribute="bottom" constant="8" id="Aog-0N-Tf3"/>
+                            <constraint firstItem="Ofh-K8-6a3" firstAttribute="width" secondItem="Ofh-K8-6a3" secondAttribute="height" multiplier="1:1" id="BV2-56-6bt"/>
+                            <constraint firstItem="Ofh-K8-6a3" firstAttribute="leading" secondItem="wCN-Gp-zAh" secondAttribute="trailing" constant="20" id="Bc4-P1-XJk"/>
+                            <constraint firstItem="P8V-ME-zdP" firstAttribute="leading" secondItem="zCr-7N-SuW" secondAttribute="leading" id="Egv-KG-Uoh"/>
+                            <constraint firstItem="6n0-kw-77f" firstAttribute="width" secondItem="6n0-kw-77f" secondAttribute="height" multiplier="1:1" id="Eio-oy-mfE"/>
+                            <constraint firstItem="6n0-kw-77f" firstAttribute="width" secondItem="6n0-kw-77f" secondAttribute="height" multiplier="1:1" id="FE8-uA-91F"/>
+                            <constraint firstItem="Ofh-K8-6a3" firstAttribute="width" secondItem="Ofh-K8-6a3" secondAttribute="height" multiplier="1:1" id="FEy-Yy-obd"/>
+                            <constraint firstItem="H1U-JC-Hfm" firstAttribute="centerX" secondItem="DLJ-T5-oJg" secondAttribute="centerX" id="G8i-FC-QFd"/>
+                            <constraint firstItem="Ofh-K8-6a3" firstAttribute="width" secondItem="Ofh-K8-6a3" secondAttribute="height" multiplier="1:1" id="IaM-Ne-0Nu"/>
+                            <constraint firstItem="wCN-Gp-zAh" firstAttribute="centerY" secondItem="tYA-tb-D3F" secondAttribute="centerY" id="Qwu-yU-Gm9"/>
+                            <constraint firstItem="6n0-kw-77f" firstAttribute="width" secondItem="6n0-kw-77f" secondAttribute="height" multiplier="1:1" id="VlE-cm-Jvv"/>
+                            <constraint firstItem="6n0-kw-77f" firstAttribute="width" secondItem="6n0-kw-77f" secondAttribute="height" multiplier="1:1" id="aTv-io-bk7"/>
+                            <constraint firstItem="zCr-7N-SuW" firstAttribute="top" secondItem="P8V-ME-zdP" secondAttribute="bottom" constant="16" id="bW4-1j-936"/>
+                            <constraint firstItem="tYA-tb-D3F" firstAttribute="centerY" secondItem="P8V-ME-zdP" secondAttribute="centerY" id="gAE-zo-brT"/>
+                            <constraint firstItem="tYA-tb-D3F" firstAttribute="width" secondItem="tYA-tb-D3F" secondAttribute="height" multiplier="1:1" id="gC8-8x-7v0"/>
+                            <constraint firstItem="H1U-JC-Hfm" firstAttribute="top" secondItem="DLJ-T5-oJg" secondAttribute="bottom" constant="10" id="hzg-40-ple"/>
+                            <constraint firstItem="qUA-yY-OZS" firstAttribute="top" secondItem="3hB-lB-3se" secondAttribute="bottom" constant="36" id="ibW-MD-2yx"/>
+                            <constraint firstItem="DLJ-T5-oJg" firstAttribute="top" secondItem="pHg-mq-ppf" secondAttribute="bottom" constant="20" id="juP-Sy-BUl"/>
+                            <constraint firstItem="Jpd-bz-zej" firstAttribute="leading" secondItem="P8V-ME-zdP" secondAttribute="leading" id="kvs-Du-hI9"/>
+                            <constraint firstItem="wCN-Gp-zAh" firstAttribute="width" secondItem="wCN-Gp-zAh" secondAttribute="height" multiplier="1:1" id="lD0-2h-X2V"/>
+                            <constraint firstItem="6n0-kw-77f" firstAttribute="centerY" secondItem="Ofh-K8-6a3" secondAttribute="centerY" id="mfT-rT-ez1"/>
+                            <constraint firstItem="tYA-tb-D3F" firstAttribute="width" secondItem="tYA-tb-D3F" secondAttribute="height" multiplier="1:1" id="mh5-eq-tnJ"/>
+                            <constraint firstItem="tYA-tb-D3F" firstAttribute="leading" secondItem="P8V-ME-zdP" secondAttribute="trailing" constant="20" id="oFe-Wj-cLA"/>
+                            <constraint firstItem="zCr-7N-SuW" firstAttribute="centerX" secondItem="3hB-lB-3se" secondAttribute="centerX" id="pPk-78-hVk"/>
+                            <constraint firstItem="6n0-kw-77f" firstAttribute="width" secondItem="6n0-kw-77f" secondAttribute="height" multiplier="1:1" id="q4U-qo-HS2"/>
+                            <constraint firstItem="DLJ-T5-oJg" firstAttribute="centerX" secondItem="hgX-TX-VhE" secondAttribute="centerX" id="tWO-c2-aeK"/>
+                            <constraint firstItem="wCN-Gp-zAh" firstAttribute="width" secondItem="wCN-Gp-zAh" secondAttribute="height" multiplier="1:1" id="tqf-2a-UP9"/>
+                            <constraint firstItem="P8V-ME-zdP" firstAttribute="width" secondItem="P8V-ME-zdP" secondAttribute="height" multiplier="1:1" id="wdG-Ba-9TS"/>
+                            <constraint firstItem="Ofh-K8-6a3" firstAttribute="centerY" secondItem="wCN-Gp-zAh" secondAttribute="centerY" id="zXN-6G-asj"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="H1U-JC-Hfm" id="eV4-c3-fTJ"/>
+                        <outlet property="resultView" destination="DLJ-T5-oJg" id="CTP-Dy-tKj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahs-Bp-YlA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1174" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="guassian_mask1.png" width="21" height="21"/>
+        <image name="guassian_mask2.png" width="21" height="21"/>
+        <image name="guassian_mask3.png" width="21" height="21"/>
+        <image name="guassian_mask4.png" width="21" height="21"/>
+        <image name="guassian_mask5.png" width="21" height="21"/>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
+</document>

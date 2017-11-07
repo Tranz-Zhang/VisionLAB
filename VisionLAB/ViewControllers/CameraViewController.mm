@@ -32,9 +32,9 @@
     _displayer = [VLDisplayer new];
     _displayer.delegete = self;
     
-    UIImage *icon = [UIImage imageNamed:@"camera_icon"];
-    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithImage:icon style:UIBarButtonItemStyleDone target:self action:@selector(onSwitchCamera)];
-    self.navigationItem.rightBarButtonItem = rightBarButton;
+//    UIImage *icon = [UIImage imageNamed:@"camera_icon"];
+//    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithImage:icon style:UIBarButtonItemStyleDone target:self action:@selector(onSwitchCamera)];
+//    self.navigationItem.rightBarButtonItem = rightBarButton;
 }
 
 
@@ -60,7 +60,7 @@
     [_camera switchCameraType:switcher.on ? VLCameraTypeBack : VLCameraTypeFront];
 }
 
-- (void)onSwitchCamera {
+- (IBAction)onSwitchCamera {
     if (_camera.cameraType == VLCameraTypeBack) {
         [_camera switchCameraType:VLCameraTypeFront];
         

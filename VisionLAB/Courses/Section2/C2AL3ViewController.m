@@ -10,6 +10,10 @@
 
 @interface C2AL3ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *resultView;
+@property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+
+
 @end
 
 @implementation C2AL3ViewController

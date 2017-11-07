@@ -11,26 +11,28 @@
 		4C18B7501F99056F005FC7E8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C18B74F1F99056F005FC7E8 /* GLKit.framework */; };
 		4C18B7561F990721005FC7E8 /* VLDisplayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7551F990721005FC7E8 /* VLDisplayer.mm */; };
 		4C18B75A1F990B33005FC7E8 /* CameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7581F990B33005FC7E8 /* CameraViewController.mm */; };
-		4C18B75B1F990B33005FC7E8 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C18B7591F990B33005FC7E8 /* CameraViewController.xib */; };
+		4C1CD64C1FB1E70500797A5F /* C2AL2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CD64B1FB1E70500797A5F /* C2AL2ViewController.storyboard */; };
+		4C1CD64E1FB1E72A00797A5F /* C2AL1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CD64D1FB1E72A00797A5F /* C2AL1ViewController.storyboard */; };
+		4C1CD64F1FB1EA4200797A5F /* C2BL1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CD6491FB1E54A00797A5F /* C2BL1ViewController.storyboard */; };
+		4C1CD6511FB1EAA600797A5F /* HelloOpenCVViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CD6501FB1EAA600797A5F /* HelloOpenCVViewController.storyboard */; };
+		4C1CD6531FB1EB8000797A5F /* EdgeDetectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CD6521FB1EB8000797A5F /* EdgeDetectionViewController.storyboard */; };
+		4C1CD6551FB1ECAB00797A5F /* CameraViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CD6541FB1ECAB00797A5F /* CameraViewController.storyboard */; };
+		4C1CD6571FB1EF5E00797A5F /* RendererViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CD6561FB1EF5E00797A5F /* RendererViewController.storyboard */; };
 		4C289E881F754DCE00E153B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C289E871F754DCE00E153B8 /* main.m */; };
 		4C289E8B1F754DCE00E153B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C289E8A1F754DCE00E153B8 /* AppDelegate.m */; };
 		4C289E911F754DCE00E153B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C289E8F1F754DCE00E153B8 /* Main.storyboard */; };
 		4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C289E921F754DCE00E153B8 /* Assets.xcassets */; };
 		4C289E961F754DCE00E153B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C289E941F754DCE00E153B8 /* LaunchScreen.storyboard */; };
-		4C2A13D81F9245D100C1D4B2 /* EdgeDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2A13D61F9245D100C1D4B2 /* EdgeDetectionViewController.xib */; };
 		4C2A13DB1F9246B300C1D4B2 /* LabUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A13DA1F9246B300C1D4B2 /* LabUtils.m */; };
 		4C2A13DE1F9249D500C1D4B2 /* EdgeDetectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A13DD1F9249D500C1D4B2 /* EdgeDetectionViewController.mm */; };
 		4C3DF2FB1F966DAE007F6986 /* C2AL1ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C3DF2F91F966DAE007F6986 /* C2AL1ViewController.mm */; };
-		4C3DF2FC1F966DAE007F6986 /* C2AL1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3DF2FA1F966DAE007F6986 /* C2AL1ViewController.xib */; };
 		4C3E719F1F78FB7B003F5AE2 /* VLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E719D1F78FB7B003F5AE2 /* VLButton.m */; };
 		4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.mm */; };
-		4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71A31F78FB87003F5AE2 /* HelloOpenCVViewController.xib */; };
 		4C3E71AB1F78FBA8003F5AE2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */; };
 		4C3E71B01F78FC14003F5AE2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */; };
 		4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B21F7937D9003F5AE2 /* music_256.png */; };
 		4C3E71B51F7937ED003F5AE2 /* sunset_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C3E71B41F7937ED003F5AE2 /* sunset_256.png */; };
 		4C42981F1F9B268E0080667C /* RendererViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C42981E1F9B268E0080667C /* RendererViewController.mm */; };
-		4C4298211F9B26A60080667C /* RendererViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4298201F9B26A60080667C /* RendererViewController.xib */; };
 		4C4298781F9B2D8C0080667C /* VLGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298751F9B2D890080667C /* VLGLProgram.m */; };
 		4C4298791F9B2D8C0080667C /* VLTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298771F9B2D890080667C /* VLTextureCache.m */; };
 		4C42987A1F9B2D910080667C /* VLImageRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298521F9B2D650080667C /* VLImageRenderer.mm */; };
@@ -45,7 +47,6 @@
 		4C4298831F9B2DB20080667C /* pixel_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C42986F1F9B2D650080667C /* pixel_layer.cpp */; };
 		4C4298841F9B2DB20080667C /* texture_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C4298711F9B2D650080667C /* texture_loader.cpp */; };
 		4C7C135F1F977C450032628E /* C2BL1ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C135D1F977C450032628E /* C2BL1ViewController.mm */; };
-		4C7C13601F977C450032628E /* C2BL1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7C135E1F977C450032628E /* C2BL1ViewController.xib */; };
 		4C7C13671F9780C20032628E /* VLDrawObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C13661F9780C20032628E /* VLDrawObject.m */; };
 		4C7C136A1F9780EA0032628E /* VLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C13691F9780EA0032628E /* VLDrawView.m */; };
 		4C7C136E1F9785420032628E /* VLLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7C136D1F9785420032628E /* VLLine.m */; };
@@ -61,13 +62,12 @@
 		4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA091FAF51F000249B84 /* guassian_mask3.png */; };
 		4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA081FAF51F000249B84 /* guassian_mask4.png */; };
 		4CC278B11FAB446100A08782 /* C2AL2ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */; };
-		4CC278B21FAB446100A08782 /* C2AL2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */; };
 		4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B31FAB4EE500A08782 /* avatar_100.png */; };
 		4CC278C11FAB5A7400A08782 /* gray_image_mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278BF1FAB5A7400A08782 /* gray_image_mat.cpp */; };
 		4CC278C41FAB5F5100A08782 /* VLImageMatTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278C31FAB5F5100A08782 /* VLImageMatTools.mm */; };
 		4CD72EEA1FB0C01E0099DD9F /* guassian_mask5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD72EE91FB0C01E0099DD9F /* guassian_mask5.png */; };
 		4CD72EED1FB0C1200099DD9F /* C2AL3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD72EEC1FB0C1200099DD9F /* C2AL3ViewController.m */; };
-		4CD72EEF1FB0C14D0099DD9F /* C2A.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD72EEE1FB0C14D0099DD9F /* C2A.storyboard */; };
+		4CD72EEF1FB0C14D0099DD9F /* C2AL3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD72EEE1FB0C14D0099DD9F /* C2AL3ViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +78,13 @@
 		4C18B7551F990721005FC7E8 /* VLDisplayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLDisplayer.mm; sourceTree = "<group>"; };
 		4C18B7571F990B33005FC7E8 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		4C18B7581F990B33005FC7E8 /* CameraViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraViewController.mm; sourceTree = "<group>"; };
-		4C18B7591F990B33005FC7E8 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		4C1CD6491FB1E54A00797A5F /* C2BL1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = C2BL1ViewController.storyboard; sourceTree = "<group>"; };
+		4C1CD64B1FB1E70500797A5F /* C2AL2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = C2AL2ViewController.storyboard; sourceTree = "<group>"; };
+		4C1CD64D1FB1E72A00797A5F /* C2AL1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = C2AL1ViewController.storyboard; sourceTree = "<group>"; };
+		4C1CD6501FB1EAA600797A5F /* HelloOpenCVViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HelloOpenCVViewController.storyboard; sourceTree = "<group>"; };
+		4C1CD6521FB1EB8000797A5F /* EdgeDetectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EdgeDetectionViewController.storyboard; sourceTree = "<group>"; };
+		4C1CD6541FB1ECAB00797A5F /* CameraViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraViewController.storyboard; sourceTree = "<group>"; };
+		4C1CD6561FB1EF5E00797A5F /* RendererViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RendererViewController.storyboard; sourceTree = "<group>"; };
 		4C289E831F754DCE00E153B8 /* VisionLAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionLAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C289E871F754DCE00E153B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C289E891F754DCE00E153B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,19 +93,16 @@
 		4C289E921F754DCE00E153B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C289E951F754DCE00E153B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C289E971F754DCE00E153B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C2A13D61F9245D100C1D4B2 /* EdgeDetectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EdgeDetectionViewController.xib; sourceTree = "<group>"; };
 		4C2A13D91F9246B300C1D4B2 /* LabUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabUtils.h; sourceTree = "<group>"; };
 		4C2A13DA1F9246B300C1D4B2 /* LabUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabUtils.m; sourceTree = "<group>"; };
 		4C2A13DC1F9249D500C1D4B2 /* EdgeDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EdgeDetectionViewController.h; sourceTree = "<group>"; };
 		4C2A13DD1F9249D500C1D4B2 /* EdgeDetectionViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EdgeDetectionViewController.mm; sourceTree = "<group>"; };
 		4C3DF2F81F966DAE007F6986 /* C2AL1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL1ViewController.h; sourceTree = "<group>"; };
 		4C3DF2F91F966DAE007F6986 /* C2AL1ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = C2AL1ViewController.mm; sourceTree = "<group>"; };
-		4C3DF2FA1F966DAE007F6986 /* C2AL1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = C2AL1ViewController.xib; sourceTree = "<group>"; };
 		4C3E719C1F78FB7B003F5AE2 /* VLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLButton.h; sourceTree = "<group>"; };
 		4C3E719D1F78FB7B003F5AE2 /* VLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLButton.m; sourceTree = "<group>"; };
 		4C3E71A11F78FB87003F5AE2 /* HelloOpenCVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloOpenCVViewController.h; sourceTree = "<group>"; };
 		4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloOpenCVViewController.mm; sourceTree = "<group>"; };
-		4C3E71A31F78FB87003F5AE2 /* HelloOpenCVViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloOpenCVViewController.xib; sourceTree = "<group>"; };
 		4C3E71A81F78FBA8003F5AE2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		4C3E71AE1F78FC14003F5AE2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4C3E71AF1F78FC14003F5AE2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -107,7 +110,6 @@
 		4C3E71B41F7937ED003F5AE2 /* sunset_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunset_256.png; sourceTree = "<group>"; };
 		4C42981D1F9B268E0080667C /* RendererViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RendererViewController.h; sourceTree = "<group>"; };
 		4C42981E1F9B268E0080667C /* RendererViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RendererViewController.mm; sourceTree = "<group>"; };
-		4C4298201F9B26A60080667C /* RendererViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RendererViewController.xib; sourceTree = "<group>"; };
 		4C4298511F9B2D650080667C /* VLImageRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLImageRenderer.h; sourceTree = "<group>"; };
 		4C4298521F9B2D650080667C /* VLImageRenderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VLImageRenderer.mm; sourceTree = "<group>"; };
 		4C4298531F9B2D650080667C /* VLImageRenderGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLImageRenderGroup.h; sourceTree = "<group>"; };
@@ -144,7 +146,6 @@
 		4C4298771F9B2D890080667C /* VLTextureCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLTextureCache.m; sourceTree = "<group>"; };
 		4C7C135C1F977C450032628E /* C2BL1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2BL1ViewController.h; sourceTree = "<group>"; };
 		4C7C135D1F977C450032628E /* C2BL1ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = C2BL1ViewController.mm; sourceTree = "<group>"; };
-		4C7C135E1F977C450032628E /* C2BL1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = C2BL1ViewController.xib; sourceTree = "<group>"; };
 		4C7C13651F9780C20032628E /* VLDrawObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLDrawObject.h; sourceTree = "<group>"; };
 		4C7C13661F9780C20032628E /* VLDrawObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLDrawObject.m; sourceTree = "<group>"; };
 		4C7C13681F9780EA0032628E /* VLDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLDrawView.h; sourceTree = "<group>"; };
@@ -166,7 +167,6 @@
 		4CAFDA091FAF51F000249B84 /* guassian_mask3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask3.png; sourceTree = "<group>"; };
 		4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL2ViewController.h; sourceTree = "<group>"; };
 		4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = C2AL2ViewController.mm; sourceTree = "<group>"; };
-		4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = C2AL2ViewController.xib; sourceTree = "<group>"; };
 		4CC278B31FAB4EE500A08782 /* avatar_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_100.png; sourceTree = "<group>"; };
 		4CC278BF1FAB5A7400A08782 /* gray_image_mat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gray_image_mat.cpp; sourceTree = "<group>"; };
 		4CC278C01FAB5A7400A08782 /* gray_image_mat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gray_image_mat.hpp; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		4CD72EE91FB0C01E0099DD9F /* guassian_mask5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask5.png; sourceTree = "<group>"; };
 		4CD72EEB1FB0C1200099DD9F /* C2AL3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL3ViewController.h; sourceTree = "<group>"; };
 		4CD72EEC1FB0C1200099DD9F /* C2AL3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C2AL3ViewController.m; sourceTree = "<group>"; };
-		4CD72EEE1FB0C14D0099DD9F /* C2A.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = C2A.storyboard; sourceTree = "<group>"; };
+		4CD72EEE1FB0C14D0099DD9F /* C2AL3ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = C2AL3ViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,16 +260,16 @@
 			children = (
 				4C3DF2F81F966DAE007F6986 /* C2AL1ViewController.h */,
 				4C3DF2F91F966DAE007F6986 /* C2AL1ViewController.mm */,
-				4C3DF2FA1F966DAE007F6986 /* C2AL1ViewController.xib */,
+				4C1CD64D1FB1E72A00797A5F /* C2AL1ViewController.storyboard */,
 				4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */,
 				4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */,
-				4CC278B01FAB446100A08782 /* C2AL2ViewController.xib */,
+				4C1CD64B1FB1E70500797A5F /* C2AL2ViewController.storyboard */,
 				4CD72EEB1FB0C1200099DD9F /* C2AL3ViewController.h */,
 				4CD72EEC1FB0C1200099DD9F /* C2AL3ViewController.m */,
-				4CD72EEE1FB0C14D0099DD9F /* C2A.storyboard */,
+				4CD72EEE1FB0C14D0099DD9F /* C2AL3ViewController.storyboard */,
 				4C7C135C1F977C450032628E /* C2BL1ViewController.h */,
 				4C7C135D1F977C450032628E /* C2BL1ViewController.mm */,
-				4C7C135E1F977C450032628E /* C2BL1ViewController.xib */,
+				4C1CD6491FB1E54A00797A5F /* C2BL1ViewController.storyboard */,
 			);
 			path = Section2;
 			sourceTree = "<group>";
@@ -293,16 +293,16 @@
 			children = (
 				4C3E71A11F78FB87003F5AE2 /* HelloOpenCVViewController.h */,
 				4C3E71A21F78FB87003F5AE2 /* HelloOpenCVViewController.mm */,
-				4C3E71A31F78FB87003F5AE2 /* HelloOpenCVViewController.xib */,
+				4C1CD6501FB1EAA600797A5F /* HelloOpenCVViewController.storyboard */,
 				4C2A13DC1F9249D500C1D4B2 /* EdgeDetectionViewController.h */,
 				4C2A13DD1F9249D500C1D4B2 /* EdgeDetectionViewController.mm */,
-				4C2A13D61F9245D100C1D4B2 /* EdgeDetectionViewController.xib */,
+				4C1CD6521FB1EB8000797A5F /* EdgeDetectionViewController.storyboard */,
 				4C18B7571F990B33005FC7E8 /* CameraViewController.h */,
 				4C18B7581F990B33005FC7E8 /* CameraViewController.mm */,
-				4C18B7591F990B33005FC7E8 /* CameraViewController.xib */,
+				4C1CD6541FB1ECAB00797A5F /* CameraViewController.storyboard */,
 				4C42981D1F9B268E0080667C /* RendererViewController.h */,
 				4C42981E1F9B268E0080667C /* RendererViewController.mm */,
-				4C4298201F9B26A60080667C /* RendererViewController.xib */,
+				4C1CD6561FB1EF5E00797A5F /* RendererViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -521,30 +521,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2A13D81F9245D100C1D4B2 /* EdgeDetectionViewController.xib in Resources */,
-				4C4298211F9B26A60080667C /* RendererViewController.xib in Resources */,
+				4C1CD64F1FB1EA4200797A5F /* C2BL1ViewController.storyboard in Resources */,
 				4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */,
 				4C7C13761F97935E0032628E /* simple_shapes_512.png in Resources */,
-				4C3E71A51F78FB87003F5AE2 /* HelloOpenCVViewController.xib in Resources */,
 				4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */,
+				4C1CD64C1FB1E70500797A5F /* C2AL2ViewController.storyboard in Resources */,
 				4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */,
 				4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */,
 				4CD72EEA1FB0C01E0099DD9F /* guassian_mask5.png in Resources */,
 				4C3E71B51F7937ED003F5AE2 /* sunset_256.png in Resources */,
 				4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */,
-				4C7C13601F977C450032628E /* C2BL1ViewController.xib in Resources */,
-				4C18B75B1F990B33005FC7E8 /* CameraViewController.xib in Resources */,
+				4C1CD6551FB1ECAB00797A5F /* CameraViewController.storyboard in Resources */,
 				4C289E961F754DCE00E153B8 /* LaunchScreen.storyboard in Resources */,
 				4C7C13781F9797D80032628E /* hough_line_test.png in Resources */,
 				4CAFDA061FAF4DD200249B84 /* guassian_mask2.png in Resources */,
+				4C1CD6571FB1EF5E00797A5F /* RendererViewController.storyboard in Resources */,
 				4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */,
-				4C3DF2FC1F966DAE007F6986 /* C2AL1ViewController.xib in Resources */,
+				4C1CD64E1FB1E72A00797A5F /* C2AL1ViewController.storyboard in Resources */,
 				4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */,
-				4CD72EEF1FB0C14D0099DD9F /* C2A.storyboard in Resources */,
-				4CC278B21FAB446100A08782 /* C2AL2ViewController.xib in Resources */,
+				4CD72EEF1FB0C14D0099DD9F /* C2AL3ViewController.storyboard in Resources */,
 				4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */,
 				4CAFDA041FAF3C9B00249B84 /* guassian_mask1.png in Resources */,
+				4C1CD6531FB1EB8000797A5F /* EdgeDetectionViewController.storyboard in Resources */,
 				4C289E911F754DCE00E153B8 /* Main.storyboard in Resources */,
+				4C1CD6511FB1EAA600797A5F /* HelloOpenCVViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

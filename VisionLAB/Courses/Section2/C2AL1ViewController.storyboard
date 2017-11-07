@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--C2AL1ViewController-->
+        <scene sceneID="bAX-hP-gyJ">
+            <objects>
+                <viewController storyboardIdentifier="C2AL1ViewController" id="Qf6-Z6-4ZK" userLabel="C2AL1ViewController" customClass="C2AL1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FSw-rA-0yO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fbc-WE-WcF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NN3-db-Fk0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWX-sY-NHX">
+                                <rect key="frame" x="183" y="412" width="8.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="UN0-EU-oiA">
+                                <rect key="frame" x="37" y="104" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UN0-EU-oiA" secondAttribute="height" multiplier="1:1" id="LkL-qq-wPb"/>
+                                    <constraint firstAttribute="width" constant="300" id="pbX-bg-RZ9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-vo-4zi" customClass="VLButton">
+                                <rect key="frame" x="37" y="577" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8kr-Rp-kht"/>
+                                    <constraint firstAttribute="width" constant="300" id="DEm-dK-ILM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Load Image(CV)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLoadImage:" destination="Qf6-Z6-4ZK" eventType="touchUpInside" id="d4i-zo-1zQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.16037016370000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UN0-EU-oiA" firstAttribute="width" secondItem="UN0-EU-oiA" secondAttribute="height" multiplier="1:1" id="Dme-M4-GL5"/>
+                            <constraint firstItem="UN0-EU-oiA" firstAttribute="centerX" secondItem="NN3-db-Fk0" secondAttribute="centerX" id="E9Q-5T-u3N"/>
+                            <constraint firstItem="sWX-sY-NHX" firstAttribute="centerX" secondItem="UN0-EU-oiA" secondAttribute="centerX" id="Gox-dz-Xhl"/>
+                            <constraint firstItem="Fbc-WE-WcF" firstAttribute="top" secondItem="HOJ-vo-4zi" secondAttribute="bottom" constant="40" id="Hoc-uS-3hb"/>
+                            <constraint firstItem="UN0-EU-oiA" firstAttribute="width" secondItem="UN0-EU-oiA" secondAttribute="height" multiplier="1:1" id="KWC-CB-bGD"/>
+                            <constraint firstItem="sWX-sY-NHX" firstAttribute="top" secondItem="UN0-EU-oiA" secondAttribute="bottom" constant="8" id="WrJ-Cc-tsJ"/>
+                            <constraint firstItem="HOJ-vo-4zi" firstAttribute="centerX" secondItem="NN3-db-Fk0" secondAttribute="centerX" id="hjA-Q0-leZ"/>
+                            <constraint firstItem="UN0-EU-oiA" firstAttribute="top" secondItem="FSw-rA-0yO" secondAttribute="bottom" constant="40" id="lS4-2G-dby"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="sWX-sY-NHX" id="Kt7-Zp-Oxr"/>
+                        <outlet property="resultView" destination="UN0-EU-oiA" id="3eJ-oT-Xf2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhq-km-XM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1860" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
+</document>

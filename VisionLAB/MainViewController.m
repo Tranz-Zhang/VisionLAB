@@ -158,23 +158,19 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     EntranceInfo *info = _mainList[indexPath.row];
-    Class clazz = NSClassFromString(info.viewControllerName);
-    if (!clazz) {
-        NSLog(@"Error: Can not find view controller with name:%@", info.viewControllerName);
+    if (![[NSBundle mainBundle] pathForResource:info.viewControllerName ofType:@"storyboardc"]) {
+        NSLog(@"Error: can not find storyboard for %@", info.viewControllerName);
         return;
     }
-    UIViewController *vc = [[clazz alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:info.viewControllerName bundle:[NSBundle mainBundle]];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:info.viewControllerName];
+    
     if (_currentEntranceType == EntranceTypeCourse) {
         vc.title = [info.title.string substringFromIndex:5];
     } else {
         vc.title = info.title.string;
     }
-    if ([vc isKindOfClass:[UIViewController class]]) {
-        [self.navigationController pushViewController:vc animated:YES];
-        
-    } else {
-        NSLog(@"Error: class is not UIViewController !!!");
-    }
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

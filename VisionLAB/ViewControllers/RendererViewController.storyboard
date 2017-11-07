@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RendererViewController-->
+        <scene sceneID="78w-G1-3d4">
+            <objects>
+                <viewController storyboardIdentifier="RendererViewController" id="O7G-c4-zcc" userLabel="RendererViewController" customClass="RendererViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JMG-ZG-cqd"/>
+                        <viewControllerLayoutGuide type="bottom" id="gWg-z3-MkB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P4P-Zk-6R5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{   }" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-by-E3u">
+                                <rect key="frame" x="174" y="412" width="25.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="LT6-Ph-eLE">
+                                <rect key="frame" x="37" y="104" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Gon-us-t3g"/>
+                                    <constraint firstAttribute="width" secondItem="LT6-Ph-eLE" secondAttribute="height" multiplier="1:1" id="HfV-QR-Yc5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bv-qY-k0B" customClass="VLButton">
+                                <rect key="frame" x="37" y="577" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Qfb-cz-xI9"/>
+                                    <constraint firstAttribute="height" constant="50" id="i3o-Zv-tAs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Render">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestRenderer:" destination="O7G-c4-zcc" eventType="touchUpInside" id="cGh-th-bD2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myl-iC-Vgi" customClass="VLButton">
+                                <rect key="frame" x="37" y="503" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2OR-xC-3Fg"/>
+                                    <constraint firstAttribute="height" constant="50" id="oEz-Op-3vt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Test VLDisplayer">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestVLDisplayer:" destination="O7G-c4-zcc" eventType="touchUpInside" id="kvo-yQ-N1f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.16037016370000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="myl-iC-Vgi" firstAttribute="centerX" secondItem="4bv-qY-k0B" secondAttribute="centerX" id="06Z-V1-9kU"/>
+                            <constraint firstItem="Ahv-by-E3u" firstAttribute="top" secondItem="LT6-Ph-eLE" secondAttribute="bottom" constant="8" id="0ch-NC-eiu"/>
+                            <constraint firstItem="LT6-Ph-eLE" firstAttribute="top" secondItem="JMG-ZG-cqd" secondAttribute="bottom" constant="40" id="15Y-gW-BbC"/>
+                            <constraint firstItem="Ahv-by-E3u" firstAttribute="centerX" secondItem="LT6-Ph-eLE" secondAttribute="centerX" id="3v2-9t-dSc"/>
+                            <constraint firstItem="LT6-Ph-eLE" firstAttribute="centerX" secondItem="P4P-Zk-6R5" secondAttribute="centerX" id="Ktk-ur-cUn"/>
+                            <constraint firstItem="4bv-qY-k0B" firstAttribute="centerX" secondItem="P4P-Zk-6R5" secondAttribute="centerX" id="azK-IR-t7S"/>
+                            <constraint firstItem="gWg-z3-MkB" firstAttribute="top" secondItem="4bv-qY-k0B" secondAttribute="bottom" constant="40" id="ha2-cw-tD0"/>
+                            <constraint firstItem="LT6-Ph-eLE" firstAttribute="width" secondItem="LT6-Ph-eLE" secondAttribute="height" multiplier="1:1" id="jzz-4x-Fbe"/>
+                            <constraint firstItem="LT6-Ph-eLE" firstAttribute="width" secondItem="LT6-Ph-eLE" secondAttribute="height" multiplier="1:1" id="o3A-0L-85p"/>
+                            <constraint firstItem="4bv-qY-k0B" firstAttribute="top" secondItem="myl-iC-Vgi" secondAttribute="bottom" constant="24" id="pPD-xU-XOO"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="Ahv-by-E3u" id="Yv6-Li-yTh"/>
+                        <outlet property="resultView" destination="LT6-Ph-eLE" id="AXe-1S-6P5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPz-cT-Q0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
+</document>
