@@ -47,14 +47,14 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     // add Course entrances
     [self addCourseEntranceWithTitle:@"2A-L1 Images as functions" className:@"C2AL1ViewController"];
     [self addCourseEntranceWithTitle:@"2A-L2 Filtering" className:@"C2AL2ViewController"];
-    [self addCourseEntranceWithTitle:@"2A-L3 Linearity and convolution" className:nil];
+    [self addCourseEntranceWithTitle:@"2A-L3 Linearity and convolution" className:@"C2AL3ViewController"];
     [self addCourseEntranceWithTitle:@"2A-L4 Renderer as templates" className:nil];
     [self addCourseEntranceWithTitle:@"2A-L5 Edge Detection" className:nil];
     [self addCourseEntranceWithTitle:@"2B-L1 Hough transforms: Lines" className:@"C2BL1ViewController"];
     
     _currentEntranceType = EntranceTypeUnknown;
     [self swtichToEntrance:EntranceTypeCourse animated:NO];
-    [self quickEnterViewControllerAtIndex:1];
+    [self quickEnterViewControllerAtIndex:2];
 }
 
 
@@ -158,6 +158,10 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     EntranceInfo *info = _mainList[indexPath.row];
+    if (!info.viewControllerName.length) {
+        NSLog(@"Error: no view controller name");
+        return;
+    }
     if (![[NSBundle mainBundle] pathForResource:info.viewControllerName ofType:@"storyboardc"]) {
         NSLog(@"Error: can not find storyboard for %@", info.viewControllerName);
         return;

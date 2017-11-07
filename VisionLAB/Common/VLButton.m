@@ -25,6 +25,8 @@
     [self setTitleColor:[UIColor colorWithWhite:0.9 alpha:1] forState:UIControlStateHighlighted];
     self.backgroundColor = [UIColor clearColor];
     self.adjustsImageWhenHighlighted = NO;
+    self.titleLabel.minimumScaleFactor = 0.6;
+    self.titleLabel.adjustsFontSizeToFitWidth = YES;
 }
 
 /*
