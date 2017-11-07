@@ -31,10 +31,6 @@
     }];
     _displayer = [VLDisplayer new];
     _displayer.delegete = self;
-    
-//    UIImage *icon = [UIImage imageNamed:@"camera_icon"];
-//    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithImage:icon style:UIBarButtonItemStyleDone target:self action:@selector(onSwitchCamera)];
-//    self.navigationItem.rightBarButtonItem = rightBarButton;
 }
 
 
@@ -53,11 +49,6 @@
         [_camera startCapture];
         [button setTitle:@"Stop" forState:UIControlStateNormal];
     }
-}
-
-
-- (IBAction)onSwitchChange:(UISwitch *)switcher {
-    [_camera switchCameraType:switcher.on ? VLCameraTypeBack : VLCameraTypeFront];
 }
 
 - (IBAction)onSwitchCamera {
