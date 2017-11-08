@@ -49,7 +49,7 @@ using namespace VLImageKit;
         }
         NSLog(@"total mask value: %lu", totalMaskValue);
         
-        // start gaussian cross-convolution
+        // start gaussian correlation
         UIImage *sourceImage = [UIImage imageNamed:@"inhouse_512.jpg"];
         
         GrayImageMat *sourceMat = CreateGrayImageMatWithUIImage(sourceImage);
