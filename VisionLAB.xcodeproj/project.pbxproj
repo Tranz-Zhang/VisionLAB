@@ -61,6 +61,10 @@
 		4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */; };
 		4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE11F9507C100697A47 /* house_1024.jpg */; };
 		4C8D0BE41F95083300697A47 /* inhouse_512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */; };
+		4CA663AD1FB431B20000F65B /* C2AL4ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CA663AC1FB431B20000F65B /* C2AL4ViewController.mm */; };
+		4CA663AF1FB431EE0000F65B /* C2AL4ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA663AE1FB431EE0000F65B /* C2AL4ViewController.storyboard */; };
+		4CA663B11FB436C00000F65B /* template_inhouse_21.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA663B01FB436C00000F65B /* template_inhouse_21.png */; };
+		4CA663B41FB44AE60000F65B /* VLDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA663B31FB44AE60000F65B /* VLDot.m */; };
 		4CAFDA041FAF3C9B00249B84 /* guassian_mask1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA031FAF3C9900249B84 /* guassian_mask1.png */; };
 		4CAFDA061FAF4DD200249B84 /* guassian_mask2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */; };
 		4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA091FAF51F000249B84 /* guassian_mask3.png */; };
@@ -169,6 +173,12 @@
 		4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toy_2048.jpg; sourceTree = "<group>"; };
 		4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inhouse_512.jpg; sourceTree = "<group>"; };
 		4C8D0BE11F9507C100697A47 /* house_1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house_1024.jpg; sourceTree = "<group>"; };
+		4CA663AB1FB431B20000F65B /* C2AL4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2AL4ViewController.h; sourceTree = "<group>"; };
+		4CA663AC1FB431B20000F65B /* C2AL4ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = C2AL4ViewController.mm; sourceTree = "<group>"; };
+		4CA663AE1FB431EE0000F65B /* C2AL4ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = C2AL4ViewController.storyboard; sourceTree = "<group>"; };
+		4CA663B01FB436C00000F65B /* template_inhouse_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = template_inhouse_21.png; sourceTree = "<group>"; };
+		4CA663B21FB44AE60000F65B /* VLDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDot.h; sourceTree = "<group>"; };
+		4CA663B31FB44AE60000F65B /* VLDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDot.m; sourceTree = "<group>"; };
 		4CAFDA031FAF3C9900249B84 /* guassian_mask1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask1.png; sourceTree = "<group>"; };
 		4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask2.png; sourceTree = "<group>"; };
 		4CAFDA081FAF51F000249B84 /* guassian_mask4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask4.png; sourceTree = "<group>"; };
@@ -275,6 +285,9 @@
 				4CD72EEB1FB0C1200099DD9F /* C2AL3ViewController.h */,
 				4CD72EEC1FB0C1200099DD9F /* C2AL3ViewController.mm */,
 				4CD72EEE1FB0C14D0099DD9F /* C2AL3ViewController.storyboard */,
+				4CA663AB1FB431B20000F65B /* C2AL4ViewController.h */,
+				4CA663AC1FB431B20000F65B /* C2AL4ViewController.mm */,
+				4CA663AE1FB431EE0000F65B /* C2AL4ViewController.storyboard */,
 				4C7C135C1F977C450032628E /* C2BL1ViewController.h */,
 				4C7C135D1F977C450032628E /* C2BL1ViewController.mm */,
 				4C1CD6491FB1E54A00797A5F /* C2BL1ViewController.storyboard */,
@@ -335,6 +348,7 @@
 				4CAFDA091FAF51F000249B84 /* guassian_mask3.png */,
 				4CAFDA081FAF51F000249B84 /* guassian_mask4.png */,
 				4CD72EE91FB0C01E0099DD9F /* guassian_mask5.png */,
+				4CA663B01FB436C00000F65B /* template_inhouse_21.png */,
 				4CC278B31FAB4EE500A08782 /* avatar_100.png */,
 				4C7C13771F9797D20032628E /* hough_line_test.png */,
 				4C7C13751F9793350032628E /* simple_shapes_512.png */,
@@ -461,6 +475,8 @@
 				4C7C13701F9789430032628E /* VLRectangle.m */,
 				4C7C13721F978A950032628E /* VLCircle.h */,
 				4C7C13731F978A950032628E /* VLCircle.m */,
+				4CA663B21FB44AE60000F65B /* VLDot.h */,
+				4CA663B31FB44AE60000F65B /* VLDot.m */,
 			);
 			path = DrawObjects;
 			sourceTree = "<group>";
@@ -551,7 +567,9 @@
 				4C7C13781F9797D80032628E /* hough_line_test.png in Resources */,
 				4CAFDA061FAF4DD200249B84 /* guassian_mask2.png in Resources */,
 				4C1CD6571FB1EF5E00797A5F /* RendererViewController.storyboard in Resources */,
+				4CA663B11FB436C00000F65B /* template_inhouse_21.png in Resources */,
 				4C289E931F754DCE00E153B8 /* Assets.xcassets in Resources */,
+				4CA663AF1FB431EE0000F65B /* C2AL4ViewController.storyboard in Resources */,
 				4C1CD64E1FB1E72A00797A5F /* C2AL1ViewController.storyboard in Resources */,
 				4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */,
 				4CD72EEF1FB0C14D0099DD9F /* C2AL3ViewController.storyboard in Resources */,
@@ -572,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */,
+				4CA663AD1FB431B20000F65B /* C2AL4ViewController.mm in Sources */,
 				4CC278C11FAB5A7400A08782 /* gray_image_mat.cpp in Sources */,
 				4C2A13DE1F9249D500C1D4B2 /* EdgeDetectionViewController.mm in Sources */,
 				4C4298791F9B2D8C0080667C /* VLTextureCache.m in Sources */,
@@ -592,6 +611,7 @@
 				4C4298801F9B2DB20080667C /* renderer.cpp in Sources */,
 				4C7C13741F978A950032628E /* VLCircle.m in Sources */,
 				4C4298821F9B2DB20080667C /* render_group.cpp in Sources */,
+				4CA663B41FB44AE60000F65B /* VLDot.m in Sources */,
 				4CC278C41FAB5F5100A08782 /* VLImageMatTools.mm in Sources */,
 				4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */,
 				4C18B75A1F990B33005FC7E8 /* CameraViewController.mm in Sources */,

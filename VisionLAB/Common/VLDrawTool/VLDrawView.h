@@ -11,6 +11,7 @@
 #import "VLLine.h"
 #import "VLRectangle.h"
 #import "VLCircle.h"
+#import "VLDot.h"
 
 
 @interface VLDrawView : UIView
