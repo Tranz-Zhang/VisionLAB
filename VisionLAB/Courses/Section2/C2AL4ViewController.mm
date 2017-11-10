@@ -122,13 +122,13 @@ using namespace cv;
         for (int row = 0; row < blockSize.height; row++) {
             // 遍历的时候坐标反一下
             int sourceLocationX = col + location.x - (blockSize.width - 1) / 2;
-            int sourceLocatinoY = row + location.y - (blockSize.height - 1) / 2;
+            int sourceLocationY = row + location.y - (blockSize.height - 1) / 2;
             if (sourceLocationX < 0 || sourceLocationX >= imageMat->size().width ||
-                sourceLocatinoY < 0 || sourceLocatinoY >= imageMat->size().height) {
+                sourceLocationY < 0 || sourceLocationY >= imageMat->size().height) {
                 totalPixelValue += 0;
                 
             } else {
-                totalPixelValue += imageMat->getValue(sourceLocationX, sourceLocatinoY);
+                totalPixelValue += imageMat->getValue(sourceLocationX, sourceLocationY);
             }
         }
     }
@@ -144,13 +144,13 @@ using namespace cv;
             // 遍历的时候坐标反一下
             Byte pixelValue;
             int sourceLocationX = col + location.x - (blockSize.width - 1) / 2;
-            int sourceLocatinoY = row + location.y - (blockSize.height - 1) / 2;
+            int sourceLocationY = row + location.y - (blockSize.height - 1) / 2;
             if (sourceLocationX < 0 || sourceLocationX >= imageMat->size().width ||
-                sourceLocatinoY < 0 || sourceLocatinoY >= imageMat->size().height) {
+                sourceLocationY < 0 || sourceLocationY >= imageMat->size().height) {
                 pixelValue = 128;
                 
             } else {
-                pixelValue = imageMat->getValue(sourceLocationX, sourceLocatinoY);
+                pixelValue = imageMat->getValue(sourceLocationX, sourceLocationY);
             }
             Byte maskValue = mask->getValue(col, row);
             varianceValue += (pixelValue - averagePixelValue) * (maskValue - averageMaskValue);

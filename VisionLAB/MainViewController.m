@@ -49,12 +49,15 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [self addCourseEntranceWithTitle:@"2A-L2 Filtering" className:@"C2AL2ViewController"];
     [self addCourseEntranceWithTitle:@"2A-L3 Linearity and convolution" className:@"C2AL3ViewController"];
     [self addCourseEntranceWithTitle:@"2A-L4 Renderer as templates" className:@"C2AL4ViewController"];
-    [self addCourseEntranceWithTitle:@"2A-L5 Edge Detection" className:nil];
+    [self addCourseEntranceWithTitle:@"2A-L5 Edge detection: Gradients" className:@"C2AL5ViewController"];
+    [self addCourseEntranceWithTitle:@"2A-L6 Edge detection: 2D operators" className:@"C2AL6ViewController"];
+    
     [self addCourseEntranceWithTitle:@"2B-L1 Hough transforms: Lines" className:@"C2BL1ViewController"];
+    
     
     _currentEntranceType = EntranceTypeUnknown;
     [self swtichToEntrance:EntranceTypeCourse animated:NO];
-    [self quickEnterViewControllerAtIndex:3];
+    [self quickEnterViewControllerAtIndex:4];
 }
 
 

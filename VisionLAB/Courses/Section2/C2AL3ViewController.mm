@@ -332,15 +332,15 @@ using namespace VLImageKit;
         for (int row = 0; row < blockSize.height; row++) {
             // 遍历的时候坐标反一下
             int sourceLocationX = location.x + (blockSize.width - 1 - col) - (blockSize.width - 1) / 2;
-            int sourceLocatinoY = location.y + (blockSize.height - 1 - row) - (blockSize.height - 1) / 2;
+            int sourceLocationY = location.y + (blockSize.height - 1 - row) - (blockSize.height - 1) / 2;
             if (sourceLocationX < 0 || sourceLocationX >= imageMat->size().width ||
-                sourceLocatinoY < 0 || sourceLocatinoY >= imageMat->size().height) {
+                sourceLocationY < 0 || sourceLocationY >= imageMat->size().height) {
                 totalValue += 0;
                 
             } else {
                 float maskValue = mask[col][row];
                 float weight = (maskValue / normalizingParam);
-                totalValue += imageMat->getValue(sourceLocationX, sourceLocatinoY) * weight;
+                totalValue += imageMat->getValue(sourceLocationX, sourceLocationY) * weight;
             }
         }
     }
@@ -400,13 +400,13 @@ using namespace VLImageKit;
         for (int row = 0; row < blockSize.height; row++) {
             // 遍历的时候坐标反一下
             int sourceLocationX = location.x + (blockSize.width - 1 - col) - (blockSize.width - 1) / 2;
-            int sourceLocatinoY = location.y + (blockSize.height - 1 - row) - (blockSize.height - 1) / 2;
+            int sourceLocationY = location.y + (blockSize.height - 1 - row) - (blockSize.height - 1) / 2;
             if (sourceLocationX < 0 || sourceLocationX >= imageMat->size().width ||
-                sourceLocatinoY < 0 || sourceLocatinoY >= imageMat->size().height) {
+                sourceLocationY < 0 || sourceLocationY >= imageMat->size().height) {
                 valueList[idx++] = 0;
                 
             } else {
-                valueList[idx++] = imageMat->getValue(sourceLocationX, sourceLocatinoY);
+                valueList[idx++] = imageMat->getValue(sourceLocationX, sourceLocationY);
             }
         }
     }
@@ -429,19 +429,19 @@ using namespace VLImageKit;
         for (int row = 0; row < blockSize.height; row++) {
             // 遍历的时候坐标反一下
             int sourceLocationX = location.x + (blockSize.width - 1 - col) - (blockSize.width - 1) / 2;
-            int sourceLocatinoY = location.y + (blockSize.height - 1 - row) - (blockSize.height - 1) / 2;
+            int sourceLocationY = location.y + (blockSize.height - 1 - row) - (blockSize.height - 1) / 2;
             if (sourceLocationX < 0 || sourceLocationX >= imageMat->size().width ||
-                sourceLocatinoY < 0 || sourceLocatinoY >= imageMat->size().height) {
+                sourceLocationY < 0 || sourceLocationY >= imageMat->size().height) {
                 totalValue += 0;
                 
             } else {
                 int maskValue = mask->getValue(col, row);
                 if (normalizingParam) {
                     float weight = (maskValue / (float)normalizingParam);
-                    totalValue += imageMat->getValue(sourceLocationX, sourceLocatinoY) * weight;
+                    totalValue += imageMat->getValue(sourceLocationX, sourceLocationY) * weight;
                     
                 } else {
-                    totalValue += imageMat->getValue(sourceLocationX, sourceLocatinoY) * (maskValue / 256.0);
+                    totalValue += imageMat->getValue(sourceLocationX, sourceLocationY) * (maskValue / 256.0);
                 }
                 
             }
@@ -461,19 +461,19 @@ using namespace VLImageKit;
     for (int col = 0; col < blockSize.width; col++) {
         for (int row = 0; row < blockSize.height; row++) {
             int sourceLocationX = col + location.x - (blockSize.width - 1) / 2;
-            int sourceLocatinoY = row + location.y - (blockSize.height - 1) / 2;
+            int sourceLocationY = row + location.y - (blockSize.height - 1) / 2;
             if (sourceLocationX < 0 || sourceLocationX >= imageMat->size().width ||
-                sourceLocatinoY < 0 || sourceLocatinoY >= imageMat->size().height) {
+                sourceLocationY < 0 || sourceLocationY >= imageMat->size().height) {
                 totalValue += 0;
                 
             } else {
                 int maskValue = mask->getValue(col, row);
                 if (normalizingParam) {
                     float weight = (maskValue / (float)normalizingParam);
-                    totalValue += imageMat->getValue(sourceLocationX, sourceLocatinoY) * weight;
+                    totalValue += imageMat->getValue(sourceLocationX, sourceLocationY) * weight;
                     
                 } else {
-                    totalValue += imageMat->getValue(sourceLocationX, sourceLocatinoY) * (maskValue / 256.0);
+                    totalValue += imageMat->getValue(sourceLocationX, sourceLocationY) * (maskValue / 256.0);
                 }
                 
             }
