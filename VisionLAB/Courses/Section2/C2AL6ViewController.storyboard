@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--C2AL6ViewController-->
+        <scene sceneID="TsE-RY-hrn">
+            <objects>
+                <viewController storyboardIdentifier="C2AL6ViewController" id="3eV-oN-Y4F" userLabel="C2AL6ViewController" customClass="C2AL6ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sTZ-9B-f11"/>
+                        <viewControllerLayoutGuide type="bottom" id="e0C-PD-OIn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uvf-cb-R0e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X_X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgv-lf-jZq">
+                                <rect key="frame" x="174.5" y="407" width="26.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-YE-b3G">
+                                <rect key="frame" x="37" y="104" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YcP-YE-b3G" secondAttribute="height" multiplier="1:1" id="heK-JA-g9r"/>
+                                    <constraint firstAttribute="width" constant="300" id="jfQ-hN-QXt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLw-Ue-xww" customClass="VLButton">
+                                <rect key="frame" x="37" y="577" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5jU-Qt-TAL"/>
+                                    <constraint firstAttribute="width" constant="300" id="hTJ-jO-x3g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Derivative of Gaussian">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestDerivativeOfGaussian:" destination="3eV-oN-Y4F" eventType="touchUpInside" id="zWV-uY-DTW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ev1-6l-R2L" customClass="VLButton">
+                                <rect key="frame" x="37" y="508" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FCP-1f-hC8"/>
+                                    <constraint firstAttribute="width" constant="300" id="ftU-Kw-mLx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Canny Edge (OpenCV)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestCannyEdgeOperator:" destination="3eV-oN-Y4F" eventType="touchUpInside" id="IO7-7X-XOy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.16037016370000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YcP-YE-b3G" firstAttribute="top" secondItem="sTZ-9B-f11" secondAttribute="bottom" constant="40" id="4jh-2h-5t9"/>
+                            <constraint firstItem="YcP-YE-b3G" firstAttribute="width" secondItem="YcP-YE-b3G" secondAttribute="height" multiplier="1:1" id="Cx3-Ql-FiQ"/>
+                            <constraint firstItem="Ev1-6l-R2L" firstAttribute="centerX" secondItem="tLw-Ue-xww" secondAttribute="centerX" id="Dgz-Yo-QTy"/>
+                            <constraint firstItem="tLw-Ue-xww" firstAttribute="centerX" secondItem="uvf-cb-R0e" secondAttribute="centerX" id="Jvr-bX-eXT"/>
+                            <constraint firstItem="e0C-PD-OIn" firstAttribute="top" secondItem="tLw-Ue-xww" secondAttribute="bottom" constant="40" id="Pyg-VX-9NZ"/>
+                            <constraint firstItem="tLw-Ue-xww" firstAttribute="top" secondItem="Ev1-6l-R2L" secondAttribute="bottom" constant="19" id="cDv-Qk-7Kp"/>
+                            <constraint firstItem="YcP-YE-b3G" firstAttribute="width" secondItem="YcP-YE-b3G" secondAttribute="height" multiplier="1:1" id="g3X-kY-sTK"/>
+                            <constraint firstItem="mgv-lf-jZq" firstAttribute="centerX" secondItem="YcP-YE-b3G" secondAttribute="centerX" id="pan-Nn-2Ib"/>
+                            <constraint firstItem="YcP-YE-b3G" firstAttribute="centerX" secondItem="uvf-cb-R0e" secondAttribute="centerX" id="yFs-GR-FhU"/>
+                            <constraint firstItem="mgv-lf-jZq" firstAttribute="top" secondItem="YcP-YE-b3G" secondAttribute="bottom" constant="3" id="ybF-1U-fbs"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="mgv-lf-jZq" id="7je-w6-mWX"/>
+                        <outlet property="resultView" destination="YcP-YE-b3G" id="H2X-YW-rwb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMg-Ge-fIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2822" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
+</document>

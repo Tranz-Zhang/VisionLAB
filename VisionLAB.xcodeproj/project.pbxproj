@@ -72,6 +72,10 @@
 		4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA091FAF51F000249B84 /* guassian_mask3.png */; };
 		4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA081FAF51F000249B84 /* guassian_mask4.png */; };
 		4CBC75DD1FB84EDC00D5C00C /* Lenna_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC75DC1FB84EDC00D5C00C /* Lenna_512.png */; };
+		4CBC75E01FB85B4B00D5C00C /* C2AL6ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CBC75DF1FB85B4B00D5C00C /* C2AL6ViewController.mm */; };
+		4CBC75E21FB85B6700D5C00C /* C2AL6ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC75E11FB85B6700D5C00C /* C2AL6ViewController.storyboard */; };
+		4CBC75E41FB85FE700D5C00C /* guassian_mask6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC75E31FB85FE700D5C00C /* guassian_mask6.png */; };
+		4CBC75E61FB861E700D5C00C /* guassian_mask6_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC75E51FB861E700D5C00C /* guassian_mask6_small.png */; };
 		4CC278B11FAB446100A08782 /* C2AL2ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */; };
 		4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B31FAB4EE500A08782 /* avatar_100.png */; };
 		4CC278C11FAB5A7400A08782 /* gray_image_mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278BF1FAB5A7400A08782 /* gray_image_mat.cpp */; };
@@ -190,6 +194,11 @@
 		4CAFDA081FAF51F000249B84 /* guassian_mask4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask4.png; sourceTree = "<group>"; };
 		4CAFDA091FAF51F000249B84 /* guassian_mask3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask3.png; sourceTree = "<group>"; };
 		4CBC75DC1FB84EDC00D5C00C /* Lenna_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenna_512.png; sourceTree = "<group>"; };
+		4CBC75DE1FB85B4B00D5C00C /* C2AL6ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2AL6ViewController.h; sourceTree = "<group>"; };
+		4CBC75DF1FB85B4B00D5C00C /* C2AL6ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = C2AL6ViewController.mm; sourceTree = "<group>"; };
+		4CBC75E11FB85B6700D5C00C /* C2AL6ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = C2AL6ViewController.storyboard; sourceTree = "<group>"; };
+		4CBC75E31FB85FE700D5C00C /* guassian_mask6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask6.png; sourceTree = "<group>"; };
+		4CBC75E51FB861E700D5C00C /* guassian_mask6_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask6_small.png; sourceTree = "<group>"; };
 		4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL2ViewController.h; sourceTree = "<group>"; };
 		4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = C2AL2ViewController.mm; sourceTree = "<group>"; };
 		4CC278B31FAB4EE500A08782 /* avatar_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_100.png; sourceTree = "<group>"; };
@@ -298,6 +307,9 @@
 				4C8544741FB58AF5006FFF98 /* C2AL5ViewController.h */,
 				4C8544751FB58AF5006FFF98 /* C2AL5ViewController.mm */,
 				4C8544771FB58B0B006FFF98 /* C2AL5ViewController.storyboard */,
+				4CBC75DE1FB85B4B00D5C00C /* C2AL6ViewController.h */,
+				4CBC75DF1FB85B4B00D5C00C /* C2AL6ViewController.mm */,
+				4CBC75E11FB85B6700D5C00C /* C2AL6ViewController.storyboard */,
 				4C7C135C1F977C450032628E /* C2BL1ViewController.h */,
 				4C7C135D1F977C450032628E /* C2BL1ViewController.mm */,
 				4C1CD6491FB1E54A00797A5F /* C2BL1ViewController.storyboard */,
@@ -358,6 +370,8 @@
 				4CAFDA091FAF51F000249B84 /* guassian_mask3.png */,
 				4CAFDA081FAF51F000249B84 /* guassian_mask4.png */,
 				4CD72EE91FB0C01E0099DD9F /* guassian_mask5.png */,
+				4CBC75E31FB85FE700D5C00C /* guassian_mask6.png */,
+				4CBC75E51FB861E700D5C00C /* guassian_mask6_small.png */,
 				4CA663B01FB436C00000F65B /* template_inhouse_21.png */,
 				4CC278B31FAB4EE500A08782 /* avatar_100.png */,
 				4C7C13771F9797D20032628E /* hough_line_test.png */,
@@ -564,6 +578,7 @@
 				4C8D0BE31F95083300697A47 /* house_1024.jpg in Resources */,
 				4C7C13761F97935E0032628E /* simple_shapes_512.png in Resources */,
 				4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */,
+				4CBC75E21FB85B6700D5C00C /* C2AL6ViewController.storyboard in Resources */,
 				4C1CD64C1FB1E70500797A5F /* C2AL2ViewController.storyboard in Resources */,
 				4CBC75DD1FB84EDC00D5C00C /* Lenna_512.png in Resources */,
 				4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */,
@@ -576,8 +591,10 @@
 				4C8D0BE21F95083300697A47 /* toy_2048.jpg in Resources */,
 				4C1CD6551FB1ECAB00797A5F /* CameraViewController.storyboard in Resources */,
 				4C289E961F754DCE00E153B8 /* LaunchScreen.storyboard in Resources */,
+				4CBC75E61FB861E700D5C00C /* guassian_mask6_small.png in Resources */,
 				4C7C13781F9797D80032628E /* hough_line_test.png in Resources */,
 				4CAFDA061FAF4DD200249B84 /* guassian_mask2.png in Resources */,
+				4CBC75E41FB85FE700D5C00C /* guassian_mask6.png in Resources */,
 				4C1CD6571FB1EF5E00797A5F /* RendererViewController.storyboard in Resources */,
 				4CA663B11FB436C00000F65B /* template_inhouse_21.png in Resources */,
 				4C8544781FB58B0B006FFF98 /* C2AL5ViewController.storyboard in Resources */,
@@ -602,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBC75E01FB85B4B00D5C00C /* C2AL6ViewController.mm in Sources */,
 				4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */,
 				4CA663AD1FB431B20000F65B /* C2AL4ViewController.mm in Sources */,
 				4CC278C11FAB5A7400A08782 /* gray_image_mat.cpp in Sources */,

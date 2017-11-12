@@ -39,14 +39,14 @@ using namespace cv;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.resultView.image = [UIImage imageNamed:@"Lenna_512.png"];
+    self.resultView.image = [UIImage imageNamed:@"inhouse_512.jpg"];
 }
 
 
 #pragma mark - Laplacian Operator Using OpenCV
 - (IBAction)onTestLaplacianOperator:(id)sender {
     Mat sourceImage;
-    UIImageToMat([UIImage imageNamed:@"Lenna_512.png"], sourceImage);
+    UIImageToMat([UIImage imageNamed:@"inhouse_512.jpg"], sourceImage);
     
     CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
     cvtColor(sourceImage, sourceImage, CV_RGB2GRAY);
@@ -65,7 +65,7 @@ using namespace cv;
 #pragma mark - Sobel Operator Using OpenCV
 - (IBAction)onTestSobelOperator:(id)sender {
     Mat sourceImage;
-    UIImageToMat([UIImage imageNamed:@"Lenna_512.png"], sourceImage);
+    UIImageToMat([UIImage imageNamed:@"inhouse_512.jpg"], sourceImage);
     
     CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
     cvtColor(sourceImage, sourceImage, CV_RGB2GRAY);
@@ -93,7 +93,7 @@ using namespace cv;
 - (IBAction)onTestGradientAndMagnitude:(id)sender {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // start gaussian correlation
-        UIImage *sourceImage = [UIImage imageNamed:@"Lenna_512.png"];
+        UIImage *sourceImage = [UIImage imageNamed:@"inhouse_512.jpg"];
         
         GrayImageMat *sourceMat = CreateGrayImageMatWithUIImage(sourceImage);
         GrayImageMat *resultMat = CreateGrayImageMatWithUIImage(self.resultView.image ?: sourceImage);

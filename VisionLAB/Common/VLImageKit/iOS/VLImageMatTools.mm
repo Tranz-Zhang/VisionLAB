@@ -11,6 +11,9 @@
 using namespace VLImageKit;
 
 GrayImageMat *CreateGrayImageMatWithUIImage(UIImage *image) {
+    if (!image) {
+        return nullptr;
+    }
     
     CGSize size = image.size;
     GrayImageMat *mat = new GrayImageMat(VLSizeMake(size.width, size.height));
@@ -26,6 +29,9 @@ GrayImageMat *CreateGrayImageMatWithUIImage(UIImage *image) {
 }
 
 UIImage *UIImageWithGrayImageMat(VLImageKit::GrayImageMat *mat) {
+    if (!mat) {
+        return nil;
+    }
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
     Byte *rawData = mat->rawData();
     VLSize imageSize = mat->size();
