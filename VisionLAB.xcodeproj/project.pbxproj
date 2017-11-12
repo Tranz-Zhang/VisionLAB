@@ -71,6 +71,7 @@
 		4CAFDA061FAF4DD200249B84 /* guassian_mask2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */; };
 		4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA091FAF51F000249B84 /* guassian_mask3.png */; };
 		4CAFDA0B1FAF51F200249B84 /* guassian_mask4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CAFDA081FAF51F000249B84 /* guassian_mask4.png */; };
+		4CBC75DD1FB84EDC00D5C00C /* Lenna_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBC75DC1FB84EDC00D5C00C /* Lenna_512.png */; };
 		4CC278B11FAB446100A08782 /* C2AL2ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */; };
 		4CC278B41FAB4F1B00A08782 /* avatar_100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC278B31FAB4EE500A08782 /* avatar_100.png */; };
 		4CC278C11FAB5A7400A08782 /* gray_image_mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CC278BF1FAB5A7400A08782 /* gray_image_mat.cpp */; };
@@ -188,6 +189,7 @@
 		4CAFDA051FAF4DD000249B84 /* guassian_mask2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask2.png; sourceTree = "<group>"; };
 		4CAFDA081FAF51F000249B84 /* guassian_mask4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask4.png; sourceTree = "<group>"; };
 		4CAFDA091FAF51F000249B84 /* guassian_mask3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask3.png; sourceTree = "<group>"; };
+		4CBC75DC1FB84EDC00D5C00C /* Lenna_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenna_512.png; sourceTree = "<group>"; };
 		4CC278AE1FAB446100A08782 /* C2AL2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C2AL2ViewController.h; sourceTree = "<group>"; };
 		4CC278AF1FAB446100A08782 /* C2AL2ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = C2AL2ViewController.mm; sourceTree = "<group>"; };
 		4CC278B31FAB4EE500A08782 /* avatar_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_100.png; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 				4C8D0BDF1F9507C000697A47 /* toy_2048.jpg */,
 				4C8D0BE11F9507C100697A47 /* house_1024.jpg */,
 				4C8D0BE01F9507C000697A47 /* inhouse_512.jpg */,
+				4CBC75DC1FB84EDC00D5C00C /* Lenna_512.png */,
 				4C3E71B41F7937ED003F5AE2 /* sunset_256.png */,
 				4C1712721FB3338600A122ED /* sunset_noise_256.png */,
 				4C3E71B21F7937D9003F5AE2 /* music_256.png */,
@@ -562,6 +565,7 @@
 				4C7C13761F97935E0032628E /* simple_shapes_512.png in Resources */,
 				4CAFDA0A1FAF51F200249B84 /* guassian_mask3.png in Resources */,
 				4C1CD64C1FB1E70500797A5F /* C2AL2ViewController.storyboard in Resources */,
+				4CBC75DD1FB84EDC00D5C00C /* Lenna_512.png in Resources */,
 				4C3E71B31F7937D9003F5AE2 /* music_256.png in Resources */,
 				4C17126B1FB2E9BA00A122ED /* convolution_mask.png in Resources */,
 				4C17126F1FB2F14700A122ED /* guassian_mask_row.png in Resources */,

@@ -43,20 +43,54 @@
                                     <constraint firstAttribute="width" constant="300" id="hTJ-jO-x3g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                                <state key="normal" title="Test Gradient &amp; Magnitude">
+                                <state key="normal" title="Test Gradient">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="onTestGradientAndMagnitude:" destination="3eV-oN-Y4F" eventType="touchUpInside" id="VMr-ex-R0L"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCr-fF-1zf" customClass="VLButton">
+                                <rect key="frame" x="37" y="512" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TQT-iO-oUb"/>
+                                    <constraint firstAttribute="width" constant="300" id="u84-zk-GBO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Sobel (OpenCV)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestSobelOperator:" destination="3eV-oN-Y4F" eventType="touchUpInside" id="cGh-u5-e3U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-Mr-i2L" customClass="VLButton">
+                                <rect key="frame" x="37" y="447" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ugl-Sm-szE"/>
+                                    <constraint firstAttribute="width" constant="300" id="zQ8-x7-Vtv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Laplacian (OpenCV)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestLaplacianOperator:" destination="3eV-oN-Y4F" eventType="touchUpInside" id="dyD-UI-t4t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.16037016370000001" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YcP-YE-b3G" firstAttribute="top" secondItem="sTZ-9B-f11" secondAttribute="bottom" constant="40" id="4jh-2h-5t9"/>
+                            <constraint firstItem="WCr-fF-1zf" firstAttribute="top" secondItem="gxN-Mr-i2L" secondAttribute="bottom" constant="15" id="5xa-nw-fxd"/>
                             <constraint firstItem="YcP-YE-b3G" firstAttribute="width" secondItem="YcP-YE-b3G" secondAttribute="height" multiplier="1:1" id="Cx3-Ql-FiQ"/>
+                            <constraint firstItem="gxN-Mr-i2L" firstAttribute="centerX" secondItem="WCr-fF-1zf" secondAttribute="centerX" id="JLL-AY-ZSA"/>
                             <constraint firstItem="tLw-Ue-xww" firstAttribute="centerX" secondItem="uvf-cb-R0e" secondAttribute="centerX" id="Jvr-bX-eXT"/>
+                            <constraint firstItem="tLw-Ue-xww" firstAttribute="top" secondItem="WCr-fF-1zf" secondAttribute="bottom" constant="15" id="Luy-4h-qbH"/>
                             <constraint firstItem="e0C-PD-OIn" firstAttribute="top" secondItem="tLw-Ue-xww" secondAttribute="bottom" constant="40" id="Pyg-VX-9NZ"/>
+                            <constraint firstItem="WCr-fF-1zf" firstAttribute="centerX" secondItem="tLw-Ue-xww" secondAttribute="centerX" id="X2Y-PT-qA9"/>
                             <constraint firstItem="YcP-YE-b3G" firstAttribute="width" secondItem="YcP-YE-b3G" secondAttribute="height" multiplier="1:1" id="g3X-kY-sTK"/>
                             <constraint firstItem="mgv-lf-jZq" firstAttribute="centerX" secondItem="YcP-YE-b3G" secondAttribute="centerX" id="pan-Nn-2Ib"/>
                             <constraint firstItem="YcP-YE-b3G" firstAttribute="centerX" secondItem="uvf-cb-R0e" secondAttribute="centerX" id="yFs-GR-FhU"/>
