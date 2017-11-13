@@ -20,7 +20,7 @@ using namespace std;
 
 @property (weak, nonatomic) IBOutlet UIImageView *resultView;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
-@property (weak, nonatomic) IBOutlet VLDrawView *assistView;
+@property (weak, nonatomic) IBOutlet VLDrawView *markView;
 
 
 @end
@@ -62,8 +62,8 @@ using namespace std;
         NSLog(@"get line theta: %.2f rho: %.2f", theta, rho);
         double a = cos(theta);
         double b = sin(theta);
-        double x0 = a * rho * self.assistView.bounds.size.width / src_mat.cols;
-        double y0 = b * rho * self.assistView.bounds.size.height / src_mat.rows;
+        double x0 = a * rho * self.markView.bounds.size.width / src_mat.cols;
+        double y0 = b * rho * self.markView.bounds.size.height / src_mat.rows;
         CGPoint startPoint = CGPointMake(cvRound(x0 + 500 *(-b)),
                                          cvRound(y0 + 500 * a));
         CGPoint endPoint = CGPointMake(cvRound(x0 - 500 *(-b)),
@@ -75,7 +75,7 @@ using namespace std;
     }
     
     self.resultView.image = sourceImage;// MatToUIImage(edge_mat);
-    [self.assistView updateWithObjects:drawingLines];
+    [self.markView updateWithObjects:drawingLines];
 }
 
 
@@ -141,8 +141,8 @@ using namespace std;
             NSLog(@"get line theta: %.2f rho: %.2f", theta, rho);
             double a = cos(theta);
             double b = sin(theta);
-            double x0 = a * rho * self.assistView.bounds.size.width / source_image.cols;
-            double y0 = b * rho * self.assistView.bounds.size.height / source_image.rows;
+            double x0 = a * rho * self.markView.bounds.size.width / source_image.cols;
+            double y0 = b * rho * self.markView.bounds.size.height / source_image.rows;
             CGPoint startPoint = CGPointMake(cvRound(x0 + 500 *(-b)),
                                              cvRound(y0 + 500 * a));
             CGPoint endPoint = CGPointMake(cvRound(x0 - 500 *(-b)),
@@ -156,7 +156,7 @@ using namespace std;
         }
     }
     NSLog(@"Line Count: %d", (int)lines.count);
-    [self.assistView updateWithObjects:lines];
+    [self.markView updateWithObjects:lines];
     
     // show hough table
     //Mat(int rows, int cols, int type, void* data, size_t step=AUTO_STEP);
@@ -186,9 +186,9 @@ using namespace std;
 
 //- (void)testDraw {
 //    VLLine *line = [VLLine lineWithStartPoint:CGPointMake(0, 0) endPoint:CGPointMake(arc4random() % 300, 100)];
-//    VLRectangle *rect = [VLRectangle rectangleWithRect:CGRectInset(self.assistView.bounds, 20, 50)];
+//    VLRectangle *rect = [VLRectangle rectangleWithRect:CGRectInset(self.markView.bounds, 20, 50)];
 //    VLCircle *circle = [VLCircle circleWithCenter:CGPointMake(120, 200) radius:50];
-//    [self.assistView updateWithObjects:@[line, rect, circle]];
+//    [self.markView updateWithObjects:@[line, rect, circle]];
 //}
 
 

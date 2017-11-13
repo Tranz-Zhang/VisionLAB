@@ -53,11 +53,12 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [self addCourseEntranceWithTitle:@"2A-L6 Edge detection: 2D operators" className:@"C2AL6ViewController"];
     
     [self addCourseEntranceWithTitle:@"2B-L1 Hough transforms: Lines" className:@"C2BL1ViewController"];
+    [self addCourseEntranceWithTitle:@"2B-L2 Hough transforms: Circles" className:@"C2BL2ViewController"];
     
     
     _currentEntranceType = EntranceTypeUnknown;
     [self swtichToEntrance:EntranceTypeCourse animated:NO];
-    [self quickEnterViewControllerAtIndex:6];
+    [self quickEnterViewControllerAtIndex:7];
 }
 
 
@@ -83,11 +84,11 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     }
     
     NSMutableAttributedString *titleStr = [[NSMutableAttributedString alloc] initWithString:title];
-    [titleStr setAttributes:@{NSForegroundColorAttributeName: [UIColor lightGrayColor],
-                              NSFontAttributeName : [UIFont systemFontOfSize:20 weight:UIFontWeightRegular]}
-                      range:NSMakeRange(5, title.length - 5)];
     [titleStr setAttributes:@{NSForegroundColorAttributeName: [UIColor grayColor],
                               NSFontAttributeName : [UIFont systemFontOfSize:18 weight:UIFontWeightThin]}
+                      range:NSMakeRange(5, title.length - 5)];
+    [titleStr setAttributes:@{NSForegroundColorAttributeName: [UIColor lightGrayColor],
+                              NSFontAttributeName : [UIFont systemFontOfSize:20 weight:UIFontWeightRegular]}
                       range:NSMakeRange(0, 5)];
     EntranceInfo *info = [EntranceInfo new];
     info.title = titleStr;
