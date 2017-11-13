@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,19 +47,35 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onTestHoughTransform:" destination="MIb-16-4TZ" eventType="touchUpInside" id="vob-cF-fs7"/>
+                                    <action selector="onTestHoughTransform:" destination="MIb-16-4TZ" eventType="touchUpInside" id="G8Q-Gj-k8g"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NgY-bo-9PF" customClass="VLDrawView">
                                 <rect key="frame" x="37" y="104" width="300" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgU-0x-4pM" customClass="VLButton">
+                                <rect key="frame" x="37" y="507" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="fBM-2H-x2C"/>
+                                    <constraint firstAttribute="height" constant="50" id="oVT-Ze-DPy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Hough transforms (OpenCV)">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestHoughTransformUsingOpenCV:" destination="MIb-16-4TZ" eventType="touchUpInside" id="q8Z-g3-cAt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.16037016370000001" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Aqp-tL-dng" firstAttribute="width" secondItem="Aqp-tL-dng" secondAttribute="height" multiplier="1:1" id="9Pl-Jh-h82"/>
                             <constraint firstItem="Aqp-tL-dng" firstAttribute="width" secondItem="Aqp-tL-dng" secondAttribute="height" multiplier="1:1" id="Aqh-Ii-j7H"/>
                             <constraint firstItem="NgY-bo-9PF" firstAttribute="width" secondItem="Aqp-tL-dng" secondAttribute="width" id="Bgm-Ws-tWY"/>
+                            <constraint firstItem="DgU-0x-4pM" firstAttribute="centerX" secondItem="cGB-jR-iRL" secondAttribute="centerX" id="Keb-8h-CMD"/>
                             <constraint firstItem="NgY-bo-9PF" firstAttribute="centerY" secondItem="Aqp-tL-dng" secondAttribute="centerY" id="OW2-QX-FKf"/>
                             <constraint firstItem="Aqp-tL-dng" firstAttribute="top" secondItem="r7i-d9-2ns" secondAttribute="bottom" constant="40" id="UhA-HJ-kkj"/>
                             <constraint firstItem="NgY-bo-9PF" firstAttribute="height" secondItem="Aqp-tL-dng" secondAttribute="height" id="WP7-0D-pD3"/>
@@ -70,6 +85,7 @@
                             <constraint firstItem="2KS-yy-BJO" firstAttribute="top" secondItem="cGB-jR-iRL" secondAttribute="bottom" constant="40" id="dRs-W0-uJo"/>
                             <constraint firstItem="cGB-jR-iRL" firstAttribute="centerX" secondItem="YWS-Zf-IPA" secondAttribute="centerX" id="jhq-Th-1Fs"/>
                             <constraint firstItem="vgZ-ec-ZCO" firstAttribute="top" secondItem="Aqp-tL-dng" secondAttribute="bottom" constant="8" id="rok-fO-m8Q"/>
+                            <constraint firstItem="cGB-jR-iRL" firstAttribute="top" secondItem="DgU-0x-4pM" secondAttribute="bottom" constant="20" id="tHx-1s-NVW"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>

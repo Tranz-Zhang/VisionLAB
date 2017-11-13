@@ -57,7 +57,7 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     
     _currentEntranceType = EntranceTypeUnknown;
     [self swtichToEntrance:EntranceTypeCourse animated:NO];
-    [self quickEnterViewControllerAtIndex:5];
+    [self quickEnterViewControllerAtIndex:6];
 }
 
 
