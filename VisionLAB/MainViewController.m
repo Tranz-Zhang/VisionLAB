@@ -56,6 +56,7 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [self addCourseEntranceWithTitle:@"2B-L2 Hough transforms: Circles" className:@"C2BL2ViewController"];
     
     
+    
     _currentEntranceType = EntranceTypeUnknown;
     [self swtichToEntrance:EntranceTypeCourse animated:NO];
     [self quickEnterViewControllerAtIndex:7];
