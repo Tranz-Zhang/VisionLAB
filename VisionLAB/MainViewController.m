@@ -55,11 +55,13 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [self addCourseEntranceWithTitle:@"2B-L1 Hough transforms: Lines" className:@"C2BL1ViewController"];
     [self addCourseEntranceWithTitle:@"2B-L2 Hough transforms: Circles" className:@"C2BL2ViewController"];
     
-    
+    [self addCourseEntranceWithTitle:@"2C-L1 Fourier transform" className:@"C2CL1ViewController"];
+    [self addCourseEntranceWithTitle:@"2C-L2 Convolution in frequency" className:@""];
+    [self addCourseEntranceWithTitle:@"2C-L3 Aliasing" className:@""];
     
     _currentEntranceType = EntranceTypeUnknown;
     [self swtichToEntrance:EntranceTypeCourse animated:NO];
-    [self quickEnterViewControllerAtIndex:7];
+    [self quickEnterViewControllerAtIndex:8];
 }
 
 
