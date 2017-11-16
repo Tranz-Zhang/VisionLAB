@@ -87,9 +87,7 @@ using namespace std;
     temp_img.copyTo(q2);
     
     normalize(magnitude_img, magnitude_img, 0, 1, CV_MINMAX);
-//    [self pringFloatMat:magnitude_img];
     magnitude_img.convertTo(magnitude_img, CV_8U, 255, 0);
-//    [self printMat:magnitude_img];
     self.resultView.image = MatToUIImage(magnitude_img);
 
 }

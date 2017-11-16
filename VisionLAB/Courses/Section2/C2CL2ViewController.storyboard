@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--C2CL2ViewController-->
+        <scene sceneID="lUf-vG-cKm">
+            <objects>
+                <viewController storyboardIdentifier="C2CL2ViewController" id="MIb-16-4TZ" userLabel="C2CL2ViewController" customClass="C2CL2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r7i-d9-2ns"/>
+                        <viewControllerLayoutGuide type="bottom" id="2KS-yy-BJO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YWS-Zf-IPA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgZ-ec-ZCO">
+                                <rect key="frame" x="183.5" y="412" width="8.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.79512648809999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_boundary" translatesAutoresizingMaskIntoConstraints="NO" id="Aqp-tL-dng">
+                                <rect key="frame" x="37.5" y="104" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="FiU-iO-YZp"/>
+                                    <constraint firstAttribute="width" secondItem="Aqp-tL-dng" secondAttribute="height" multiplier="1:1" id="ePE-UB-KnA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGB-jR-iRL" customClass="VLButton">
+                                <rect key="frame" x="37.5" y="577" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="eGi-Mf-SNb"/>
+                                    <constraint firstAttribute="height" constant="50" id="nu9-IP-6Rb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Inverse Fourier Transform">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onInverseFourierTransform:" destination="MIb-16-4TZ" eventType="touchUpInside" id="cXO-u3-0DD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqm-qB-VwY" customClass="VLButton">
+                                <rect key="frame" x="37" y="507" width="300" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gq5-iu-oBr"/>
+                                    <constraint firstAttribute="width" constant="300" id="ade-6s-Rao"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="Resume Frequency Domain">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFequencyDomainImage:" destination="MIb-16-4TZ" eventType="touchUpInside" id="1bT-gZ-uPn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAu-7c-r3M">
+                                <rect key="frame" x="37" y="441" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="vJR-pV-pDs"/>
+                                    <constraint firstAttribute="height" constant="50" id="vib-LR-M7c"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="frequency_mask1.png"/>
+                                <connections>
+                                    <action selector="onChangeFrequencyMask:" destination="MIb-16-4TZ" eventType="touchUpInside" id="TGv-en-tPu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHW-gR-xiF">
+                                <rect key="frame" x="103" y="441" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fT3-if-Iym"/>
+                                    <constraint firstAttribute="height" constant="50" id="kBa-LG-Vvg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="frequency_mask2.png"/>
+                                <connections>
+                                    <action selector="onChangeFrequencyMask:" destination="MIb-16-4TZ" eventType="touchUpInside" id="LLK-jV-zfZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRE-aP-1HH">
+                                <rect key="frame" x="169" y="441" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QBD-iG-jfC"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wwo-sA-YoK"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="frequency_mask3.png"/>
+                                <connections>
+                                    <action selector="onChangeFrequencyMask:" destination="MIb-16-4TZ" eventType="touchUpInside" id="iQ4-x2-xEP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency Masks:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6x-F5-wF2">
+                                <rect key="frame" x="37" y="420" width="110" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiZ-jY-Tl4">
+                                <rect key="frame" x="235" y="441" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="LSB-Mw-L0f"/>
+                                    <constraint firstAttribute="height" constant="50" id="vra-38-k4O"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="frequency_mask4.png"/>
+                                <connections>
+                                    <action selector="onChangeFrequencyMask:" destination="MIb-16-4TZ" eventType="touchUpInside" id="ffg-2x-8qw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.16037016370000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SiZ-jY-Tl4" firstAttribute="leading" secondItem="CRE-aP-1HH" secondAttribute="trailing" constant="16" id="171-EU-BRX"/>
+                            <constraint firstItem="LHW-gR-xiF" firstAttribute="centerY" secondItem="HAu-7c-r3M" secondAttribute="centerY" id="2pW-uH-CFd"/>
+                            <constraint firstItem="eqm-qB-VwY" firstAttribute="top" secondItem="HAu-7c-r3M" secondAttribute="bottom" constant="16" id="8gO-MX-AEk"/>
+                            <constraint firstItem="Aqp-tL-dng" firstAttribute="width" secondItem="Aqp-tL-dng" secondAttribute="height" multiplier="1:1" id="9Pl-Jh-h82"/>
+                            <constraint firstItem="Aqp-tL-dng" firstAttribute="width" secondItem="Aqp-tL-dng" secondAttribute="height" multiplier="1:1" id="Aqh-Ii-j7H"/>
+                            <constraint firstItem="HAu-7c-r3M" firstAttribute="top" secondItem="v6x-F5-wF2" secondAttribute="bottom" constant="5" id="Fhd-TO-nPn"/>
+                            <constraint firstItem="SiZ-jY-Tl4" firstAttribute="centerY" secondItem="CRE-aP-1HH" secondAttribute="centerY" id="Fqy-Pr-gJ7"/>
+                            <constraint firstItem="v6x-F5-wF2" firstAttribute="leading" secondItem="HAu-7c-r3M" secondAttribute="leading" id="Hvy-q8-I1g"/>
+                            <constraint firstItem="HAu-7c-r3M" firstAttribute="leading" secondItem="eqm-qB-VwY" secondAttribute="leading" id="OG2-Ox-h2c"/>
+                            <constraint firstItem="LHW-gR-xiF" firstAttribute="leading" secondItem="HAu-7c-r3M" secondAttribute="trailing" constant="16" id="Twv-FD-Khp"/>
+                            <constraint firstItem="Aqp-tL-dng" firstAttribute="top" secondItem="r7i-d9-2ns" secondAttribute="bottom" constant="40" id="UhA-HJ-kkj"/>
+                            <constraint firstItem="Aqp-tL-dng" firstAttribute="centerX" secondItem="YWS-Zf-IPA" secondAttribute="centerX" id="WRb-Qh-jYk"/>
+                            <constraint firstItem="CRE-aP-1HH" firstAttribute="leading" secondItem="LHW-gR-xiF" secondAttribute="trailing" constant="16" id="btz-eu-MxZ"/>
+                            <constraint firstItem="vgZ-ec-ZCO" firstAttribute="centerX" secondItem="Aqp-tL-dng" secondAttribute="centerX" id="cvb-zI-Wyv"/>
+                            <constraint firstItem="2KS-yy-BJO" firstAttribute="top" secondItem="cGB-jR-iRL" secondAttribute="bottom" constant="40" id="dRs-W0-uJo"/>
+                            <constraint firstItem="CRE-aP-1HH" firstAttribute="centerY" secondItem="LHW-gR-xiF" secondAttribute="centerY" id="edV-0y-Qrc"/>
+                            <constraint firstItem="cGB-jR-iRL" firstAttribute="centerX" secondItem="YWS-Zf-IPA" secondAttribute="centerX" id="jhq-Th-1Fs"/>
+                            <constraint firstItem="cGB-jR-iRL" firstAttribute="top" secondItem="eqm-qB-VwY" secondAttribute="bottom" constant="20" id="oQj-W4-HBf"/>
+                            <constraint firstItem="vgZ-ec-ZCO" firstAttribute="top" secondItem="Aqp-tL-dng" secondAttribute="bottom" constant="8" id="rok-fO-m8Q"/>
+                            <constraint firstItem="eqm-qB-VwY" firstAttribute="centerX" secondItem="cGB-jR-iRL" secondAttribute="centerX" id="swy-wv-Nfh"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="vgZ-ec-ZCO" id="1bq-ng-9Sm"/>
+                        <outlet property="resultView" destination="Aqp-tL-dng" id="CRE-kt-kq0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Me-CL-9NU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2588" y="-1.3493253373313345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="frequency_mask1.png" width="512" height="512"/>
+        <image name="frequency_mask2.png" width="512" height="512"/>
+        <image name="frequency_mask3.png" width="512" height="512"/>
+        <image name="frequency_mask4.png" width="512" height="512"/>
+        <image name="image_boundary" width="62" height="62"/>
+    </resources>
+</document>
