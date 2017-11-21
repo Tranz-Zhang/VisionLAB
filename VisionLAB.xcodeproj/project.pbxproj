@@ -11,6 +11,8 @@
 		4C17126E1FB2F14700A122ED /* guassian_mask_col.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C17126C1FB2F14700A122ED /* guassian_mask_col.png */; };
 		4C17126F1FB2F14700A122ED /* guassian_mask_row.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C17126D1FB2F14700A122ED /* guassian_mask_row.png */; };
 		4C1712731FB3338600A122ED /* sunset_noise_256.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1712721FB3338600A122ED /* sunset_noise_256.png */; };
+		4C177E691FC47B630047E74C /* C2CL3ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C177E681FC47B630047E74C /* C2CL3ViewController.mm */; };
+		4C177E6B1FC47B790047E74C /* C2CL3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C177E6A1FC47B790047E74C /* C2CL3ViewController.storyboard */; };
 		4C18B74E1F990525005FC7E8 /* VLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B74D1F990525005FC7E8 /* VLCamera.m */; };
 		4C18B7501F99056F005FC7E8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C18B74F1F99056F005FC7E8 /* GLKit.framework */; };
 		4C18B7561F990721005FC7E8 /* VLDisplayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C18B7551F990721005FC7E8 /* VLDisplayer.mm */; };
@@ -99,6 +101,9 @@
 		4C17126C1FB2F14700A122ED /* guassian_mask_col.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask_col.png; sourceTree = "<group>"; };
 		4C17126D1FB2F14700A122ED /* guassian_mask_row.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guassian_mask_row.png; sourceTree = "<group>"; };
 		4C1712721FB3338600A122ED /* sunset_noise_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunset_noise_256.png; sourceTree = "<group>"; };
+		4C177E671FC47B630047E74C /* C2CL3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2CL3ViewController.h; sourceTree = "<group>"; };
+		4C177E681FC47B630047E74C /* C2CL3ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = C2CL3ViewController.mm; sourceTree = "<group>"; };
+		4C177E6A1FC47B790047E74C /* C2CL3ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = C2CL3ViewController.storyboard; sourceTree = "<group>"; };
 		4C18B74C1F990525005FC7E8 /* VLCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLCamera.h; sourceTree = "<group>"; };
 		4C18B74D1F990525005FC7E8 /* VLCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLCamera.m; sourceTree = "<group>"; };
 		4C18B74F1F99056F005FC7E8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -343,6 +348,9 @@
 				4CBA59251FBD2BD7004DB533 /* C2CL2ViewController.h */,
 				4CBA59261FBD2BD7004DB533 /* C2CL2ViewController.mm */,
 				4CBA59281FBD2C38004DB533 /* C2CL2ViewController.storyboard */,
+				4C177E671FC47B630047E74C /* C2CL3ViewController.h */,
+				4C177E681FC47B630047E74C /* C2CL3ViewController.mm */,
+				4C177E6A1FC47B790047E74C /* C2CL3ViewController.storyboard */,
 			);
 			path = Section2;
 			sourceTree = "<group>";
@@ -642,6 +650,7 @@
 				4CD72EEF1FB0C14D0099DD9F /* C2AL3ViewController.storyboard in Resources */,
 				4CAD86031FBC414700F20F31 /* C2CL1ViewController.storyboard in Resources */,
 				4CAFDA041FAF3C9B00249B84 /* guassian_mask1.png in Resources */,
+				4C177E6B1FC47B790047E74C /* C2CL3ViewController.storyboard in Resources */,
 				4C1CD6531FB1EB8000797A5F /* EdgeDetectionViewController.storyboard in Resources */,
 				4C17126E1FB2F14700A122ED /* guassian_mask_col.png in Resources */,
 				4CBA59301FBD6FC5004DB533 /* frequency_mask4.png in Resources */,
@@ -660,6 +669,7 @@
 			files = (
 				4CBC75E01FB85B4B00D5C00C /* C2AL6ViewController.mm in Sources */,
 				4C3E71A41F78FB87003F5AE2 /* HelloOpenCVViewController.mm in Sources */,
+				4C177E691FC47B630047E74C /* C2CL3ViewController.mm in Sources */,
 				4CA663AD1FB431B20000F65B /* C2AL4ViewController.mm in Sources */,
 				4CC278C11FAB5A7400A08782 /* gray_image_mat.cpp in Sources */,
 				4C2A13DE1F9249D500C1D4B2 /* EdgeDetectionViewController.mm in Sources */,
