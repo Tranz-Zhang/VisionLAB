@@ -24,8 +24,7 @@ using namespace std;
 
 @property (weak, nonatomic) IBOutlet UIImageView *resultView;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *aliasingSegment;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *antialiasingSegment;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
 
 @end
 
@@ -37,7 +36,7 @@ using namespace std;
 }
 
 - (IBAction)onTestAliasingImageScale:(UIButton *)btn {
-    int segmentIndex = (int)self.aliasingSegment.selectedSegmentIndex;
+    int segmentIndex = (int)self.segment.selectedSegmentIndex;
     self.infoLabel.text = segmentIndex != 0 ? @"Scale Image Normally" : @"";
     UIImage *sourceImage = [UIImage imageNamed:@"inhouse_512.jpg"];
     if (segmentIndex == 0) {
@@ -64,7 +63,7 @@ using namespace std;
 
 
 - (IBAction)onTestAntialiasingImageScale:(UIButton *)btn {
-    int segmentIndex = (int)self.antialiasingSegment.selectedSegmentIndex;
+    int segmentIndex = (int)self.segment.selectedSegmentIndex;
     self.infoLabel.text = segmentIndex != 0 ? @"Scale Image after removing high frequencies" : @"";
     UIImage *sourceImage = [UIImage imageNamed:@"inhouse_512.jpg"];
     if (segmentIndex == 0) {
