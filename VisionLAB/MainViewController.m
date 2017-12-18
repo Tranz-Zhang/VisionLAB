@@ -59,9 +59,11 @@ typedef NS_ENUM(NSInteger, EntranceType) {
     [self addCourseEntranceWithTitle:@"2C-L2 Convolution in frequency" className:@"C2CL2ViewController"];
     [self addCourseEntranceWithTitle:@"2C-L3 Aliasing" className:@"C2CL3ViewController"];
     
+    [self addCourseEntranceWithTitle:@"3B-L3 Stereo correspondence" className:@"C3BL3ViewController"];
+    
     _currentEntranceType = EntranceTypeUnknown;
     [self swtichToEntrance:EntranceTypeCourse animated:NO];
-    [self quickEnterViewControllerAtIndex:10];
+    [self quickEnterViewControllerAtIndex:11];
 }
 
 
